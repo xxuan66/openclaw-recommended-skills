@@ -1,0 +1,5 @@
+{
+  "name": "mify-llm",
+  "version": "1.0.0",
+  "description": "Mify LLM API - OpenAI 兼容的大语言模型接口"
+}

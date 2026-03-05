@@ -1,0 +1,5 @@
+{
+  "name": "weather",
+  "version": "1.0.0",
+  "description": "天气查询 - wttr.in + Open-Meteo 双源，无需 API 密钥"
+}
