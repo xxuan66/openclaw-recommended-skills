@@ -1,0 +1,118 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2026-03-10",
+  "maintainer": "xxuan66",
+  "source": "ClawHub (https://clawhub.ai)",
+  "skills": [
+    {
+      "slug": "searxng",
+      "name": "SearXNG",
+      "version": "1.0.3",
+      "category": "search",
+      "description": "隐私保护的本地元搜索引擎",
+      "tags": ["搜索", "隐私", "本地"],
+      "install_cmd": "clawhub install searxng",
+      "rating": 5,
+      "recommended": true
+    },
+    {
+      "slug": "self-improving-agent",
+      "name": "Self-Improving Agent",
+      "version": "3.0.0",
+      "category": "memory",
+      "description": "自我反思 + 持续学习 + 记忆管理",
+      "tags": ["学习", "记忆", "自适应"],
+      "install_cmd": "clawhub install self-improving-agent",
+      "rating": 5,
+      "recommended": true
+    },
+    {
+      "slug": "tavily-search",
+      "name": "Tavily Search",
+      "version": "1.0.0",
+      "category": "search",
+      "description": "AI 优化的实时网络搜索",
+      "tags": ["搜索", "AI", "实时"],
+      "install_cmd": "clawhub install tavily-search",
+      "rating": 5,
+      "recommended": true
+    },
+    {
+      "slug": "github",
+      "name": "GitHub CLI",
+      "version": "1.0.0",
+      "category": "dev",
+      "description": "GitHub CLI 集成，管理 PR/Issue/CI",
+      "tags": ["开发", "GitHub", "CI/CD"],
+      "install_cmd": "clawhub install github",
+      "rating": 5,
+      "recommended": true
+    },
+    {
+      "slug": "summarize",
+      "name": "Summarize",
+      "version": "1.0.0",
+      "category": "content",
+      "description": "多格式文档摘要 (PDF/图片/音频/URL)",
+      "tags": ["文档", "摘要", "内容"],
+      "install_cmd": "clawhub install summarize",
+      "rating": 4,
+      "recommended": true
+    },
+    {
+      "slug": "skill-vetter",
+      "name": "Skill Vetter",
+      "version": "1.0.0",
+      "category": "security",
+      "description": "Skill 安全审查，检查权限和风险",
+      "tags": ["安全", "审查", "权限"],
+      "install_cmd": "clawhub install skill-vetter",
+      "rating": 5,
+      "recommended": true
+    },
+    {
+      "slug": "gog",
+      "name": "Google Workspace CLI",
+      "version": "1.0.0",
+      "category": "productivity",
+      "description": "Google Workspace 全套集成",
+      "tags": ["办公", "Gmail", "Calendar"],
+      "install_cmd": "clawhub install gog",
+      "rating": 4,
+      "recommended": true
+    },
+    {
+      "slug": "find-skills",
+      "name": "Find Skills",
+      "version": "0.1.0",
+      "category": "discovery",
+      "description": "帮你发现和安装新 Skill",
+      "tags": ["发现", "搜索", "安装"],
+      "install_cmd": "clawhub install find-skills",
+      "rating": 4,
+      "recommended": true
+    },
+    {
+      "slug": "baidu-search",
+      "name": "Baidu Search",
+      "version": "1.1.1",
+      "category": "search",
+      "description": "百度 AI 搜索引擎集成",
+      "tags": ["搜索", "百度", "中文"],
+      "install_cmd": "clawhub install baidu-search",
+      "rating": 4,
+      "recommended": true
+    },
+    {
+      "slug": "starmemo",
+      "name": "StarMemo",
+      "version": "2.0.0",
+      "category": "memory",
+      "description": "结构化记忆 + 知识库 + AI 优化",
+      "tags": ["记忆", "知识库", "AI"],
+      "install_cmd": "clawhub install starmemo",
+      "rating": 4,
+      "recommended": true
+    }
+  ]
+}
