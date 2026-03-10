@@ -1,0 +1,43 @@
+name: Auto-Update Skills List
+
+on:
+  schedule:
+    # 每周一凌晨3点自动更新
+    - cron: '0 3 * * 1'
+  workflow_dispatch:  # 支持手动触发
+
+jobs:
+  update-skills:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install ClawHub CLI
+        run: npm install -g clawhub
+
+      - name: Fetch latest skills
+        id: fetch
+        run: |
+          echo "Fetching latest skills from ClawHub..."
+          clawhub explore --no-input > /tmp/latest-skills.txt || echo "Failed to fetch"
+          echo "skills_file=/tmp/latest-skills.txt" >> $GITHUB_OUTPUT
+
+      - name: Update README timestamp
+        run: |
+          TODAY=$(date +%Y-%m-%d)
+          sed -i "s/last update.*$/last update: $TODAY/g" README.md
+          sed -i "s/last_updated.*$/last_updated: $TODAY/g" README.md
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --staged --quiet || git commit -m "Auto-update: $(date +%Y-%m-%d)"
+          git push
