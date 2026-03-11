@@ -159,3 +159,45 @@ clawhub inspect <skill-name>
 
 **维护者:** @xxuan66  
 **最后更新:** 2026-03-10
+
+---
+
+## 📢 关注我们
+
+### 🌐 多平台更新
+
+| 平台 | 链接 |
+|------|------|
+| **GitHub** | https://github.com/xxuan66/openclaw-recommended-skills |
+| **微信公众号** | 搜索 "OpenClaw" |
+| **知乎** | @xuan |
+| **掘金** | @xuan |
+
+### 📰 每日更新
+
+- **06:00** - GitHub 每日更新（4 个仓库）
+- **09:30** - 公众号内容生成
+- **11:00** - 公众号发布
+
+### 🎯 项目矩阵
+
+| 仓库 | 内容 | 更新频率 |
+|------|------|---------|
+| [openclaw-recommended-skills](https://github.com/xxuan66/openclaw-recommended-skills) | Skill 推荐 | 每日 |
+| [openclaw-starter](https://github.com/xxuan66/openclaw-starter) | 场景配置 | 每日 |
+| [openclaw-workflows](https://github.com/xxuan66/openclaw-workflows) | 工作流示例 | 每日 |
+| [agent-learning-path](https://github.com/xxuan66/agent-learning-path) | 学习教程 | 每日 |
+
+---
+
+## 🤝 贡献
+
+欢迎提交 Issue 和 Pull Request！
+
+**Star⭐ 支持：** 如果这个项目对你有帮助，请给个 Star！
+
+---
+
+**最后更新：** 2026-03-11  
+**维护者：** xuan  
+**许可证：** MIT

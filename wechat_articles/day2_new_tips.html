@@ -1,10 +1,16 @@
-<section style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; max-width: 100%; box-sizing: border-box; word-wrap: break-word; line-height: 1.8;">
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>OpenClaw 使用技巧 - 5 个让你效率翻倍的小技巧</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">
 
 <!-- 标题 -->
 <section style="text-align: center; padding: 30px 20px; background: linear-gradient(135deg, #00d2ff 0%, #3a7bd5 100%); border-radius: 0 0 20px 20px; margin-bottom: 30px;">
   <h1 style="color: white; font-size: 28px; margin: 0 0 15px 0; font-weight: bold;">⚡ 5 个效率小技巧</h1>
   <p style="color: rgba(255,255,255,0.9); font-size: 16px; margin: 0;">让你的 OpenClaw 效率翻倍！</p>
-  <p style="color: rgba(255,255,255,0.7); font-size: 14px; margin: 15px 0 0 0;">2026-03-11</p>
+  <p style="color: rgba(255,255,255,0.7); font-size: 14px; margin: 15px 0 0 0;">2026-03-11 · Day 02</p>
 </section>
 
 <!-- 前言 -->
@@ -54,7 +60,7 @@ openclaw agent -m "继续昨天的工作" \
   </section>
   <section style="border: 2px solid #f5576c; border-top: none; border-radius: 0 0 12px 12px; padding: 20px; background: #fafafa;">
     <h3 style="color: #f5576c; margin: 20px 0 15px 0; font-size: 18px;">🎯 使用场景：</h3>
-    <p style="color: #333; margin: 10px 0;">不同任务需要不同模型：简单任务用便宜模型，复杂任务用强力模型。</p>
+    <p style="color: #333; margin: 10px 0;">不同任务需要不同模型：简单任务用便宜模型，复杂任务用高质量模型。</p>
     
     <h3 style="color: #f5576c; margin: 25px 0 15px 0; font-size: 18px;">💻 使用方法：</h3>
     <pre style="background: #2d2d2d; padding: 15px; border-radius: 8px; overflow-x: auto;"><code style="color: #f8f8f2; font-size: 14px; line-height: 1.6;"># 切换到备用模型
@@ -98,25 +104,20 @@ chmod +x switch-*.sh
     <h3 style="color: #4facfe; margin: 25px 0 15px 0; font-size: 18px;">💻 使用方法：</h3>
     <pre style="background: #2d2d2d; padding: 15px; border-radius: 8px; overflow-x: auto;"><code style="color: #f8f8f2; font-size: 14px; line-height: 1.6;"># 一键安装 TOP10 Skill
 for skill in searxng self-improving-agent \
-  github tavily-search skill-vetter \
-  summarize gog starmemo baidu-search \
-  find-skills; do
+  tavily-search github-trending \
+  summarize weather find-skills; do
+  echo "📦 安装 $skill..."
   clawhub install $skill
 done
 
 echo "✅ 全部安装完成！"</code></pre>
     
-    <h3 style="color: #4facfe; margin: 25px 0 15px 0; font-size: 18px;">💡 进阶技巧：</h3>
-    <pre style="background: #2d2d2d; padding: 15px; border-radius: 8px; overflow-x: auto;"><code style="color: #f8f8f2; font-size: 14px; line-height: 1.6;"># 按类别安装
-# 只安装搜索类
-for skill in searxng tavily-search baidu-search; do
-  clawhub install $skill
-done
-
-# 只安装学习类
-for skill in self-improving-agent starmemo; do
-  clawhub install $skill
-done</code></pre>
+    <h3 style="color: #4facfe; margin: 25px 0 15px 0; font-size: 18px;">✅ 好处：</h3>
+    <ul style="line-height: 2.2; color: #333; margin: 10px 0;">
+      <li>✅ 一行命令安装多个</li>
+      <li>✅ 自动处理依赖</li>
+      <li>✅ 节省时间</li>
+    </ul>
   </section>
 </section>
 
@@ -130,104 +131,79 @@ done</code></pre>
   </section>
   <section style="border: 2px solid #fa709a; border-top: none; border-radius: 0 0 12px 12px; padding: 20px; background: #fafafa;">
     <h3 style="color: #fa709a; margin: 20px 0 15px 0; font-size: 18px;">🎯 使用场景：</h3>
-    <p style="color: #333; margin: 10px 0;">重装系统、迁移服务器或防止配置丢失。</p>
+    <p style="color: #333; margin: 10px 0;">更换设备或重装系统时，需要快速恢复配置。</p>
     
     <h3 style="color: #fa709a; margin: 25px 0 15px 0; font-size: 18px;">💻 使用方法：</h3>
     <pre style="background: #2d2d2d; padding: 15px; border-radius: 8px; overflow-x: auto;"><code style="color: #f8f8f2; font-size: 14px; line-height: 1.6;"># 备份配置
 cp ~/.openclaw/openclaw.json \
-   ~/.openclaw/openclaw.json.bak.$(date +%Y%m%d)
-
-# 备份整个配置目录
-tar -czf openclaw-backup-$(date +%Y%m%d).tar.gz \
-    ~/.openclaw/
+   openclaw-backup-$(date +%Y%m%d).json
 
 # 恢复配置
-cp ~/.openclaw/openclaw.json.bak.20260310 \
+cp openclaw-backup-20260311.json \
    ~/.openclaw/openclaw.json
 
-# 重启 Gateway
-openclaw gateway restart</code></pre>
+# 或者使用 git 管理
+cd ~/.openclaw
+git add openclaw.json
+git commit -m "备份配置"
+git push</code></pre>
     
-    <h3 style="color: #fa709a; margin: 25px 0 15px 0; font-size: 18px;">💡 自动化备份：</h3>
-    <pre style="background: #2d2d2d; padding: 15px; border-radius: 8px; overflow-x: auto;"><code style="color: #f8f8f2; font-size: 14px; line-height: 1.6;"># 添加到 crontab，每周日备份
-0 2 * * 0 tar -czf ~/openclaw-backup-$(date +\%Y\%m\%d).tar.gz ~/.openclaw/</code></pre>
+    <h3 style="color: #fa709a; margin: 25px 0 15px 0; font-size: 18px;">✅ 好处：</h3>
+    <ul style="line-height: 2.2; color: #333; margin: 10px 0;">
+      <li>✅ 防止配置丢失</li>
+      <li>✅ 快速恢复环境</li>
+      <li>✅ 版本管理配置</li>
+    </ul>
   </section>
 </section>
 
 <!-- 技巧 5 -->
 <section style="margin: 40px 20px 0 20px;">
-  <section style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%); padding: 15px 20px; border-radius: 12px 12px 0 0;">
+  <section style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); padding: 15px 20px; border-radius: 12px 12px 0 0;">
     <h2 style="color: white; font-size: 22px; margin: 0; display: flex; align-items: center;">
       <span style="background: rgba(255,255,255,0.2); padding: 5px 15px; border-radius: 20px; margin-right: 10px;">5️⃣</span>
-      使用 cron 实现自动化
+      使用 cron 自动化
     </h2>
   </section>
-  <section style="border: 2px solid #30cfd0; border-top: none; border-radius: 0 0 12px 12px; padding: 20px; background: #fafafa;">
-    <h3 style="color: #30cfd0; margin: 20px 0 15px 0; font-size: 18px;">🎯 使用场景：</h3>
-    <p style="color: #333; margin: 10px 0;">定时执行任务，如每日更新、定时提醒、自动发布等。</p>
+  <section style="border: 2px solid #a8edea; border-top: none; border-radius: 0 0 12px 12px; padding: 20px; background: #fafafa;">
+    <h3 style="color: #a8edea; margin: 20px 0 15px 0; font-size: 18px;">🎯 使用场景：</h3>
+    <p style="color: #333; margin: 10px 0;">定时执行任务：每日提醒、自动备份、模型切换等。</p>
     
-    <h3 style="color: #30cfd0; margin: 25px 0 15px 0; font-size: 18px;">💻 使用方法：</h3>
-    <pre style="background: #2d2d2d; padding: 15px; border-radius: 8px; overflow-x: auto;"><code style="color: #f8f8f2; font-size: 14px; line-height: 1.6;"># 添加定时任务
+    <h3 style="color: #a8edea; margin: 25px 0 15px 0; font-size: 18px;">💻 使用方法：</h3>
+    <pre style="background: #2d2d2d; padding: 15px; border-radius: 8px; overflow-x: auto;"><code style="color: #f8f8f2; font-size: 14px; line-height: 1.6;"># 添加每日提醒
 openclaw cron add \
-  --name "每日更新" \
-  --cron "0 6 * * *" \
-  --message "执行更新任务"
+  --name "每日提醒" \
+  --cron "0 9 * * *" \
+  --message "早上好！今天有什么计划？"
 
 # 查看任务列表
 openclaw cron list
 
-# 删除任务
-openclaw cron remove --id <task-id></code></pre>
+# 手动测试
+openclaw cron run &lt;task-id&gt;</code></pre>
     
-    <h3 style="color: #30cfd0; margin: 25px 0 15px 0; font-size: 18px;">💡 实际应用：</h3>
-    <pre style="background: #2d2d2d; padding: 15px; border-radius: 8px; overflow-x: auto;"><code style="color: #f8f8f2; font-size: 14px; line-height: 1.6;"># 每天早上 6 点更新 GitHub
-openclaw cron add \
-  --name "GitHub 更新" \
-  --cron "0 6 * * *" \
-  --message "更新 GitHub 项目"
-
-# 每天早上 9 点生成公众号内容
-openclaw cron add \
-  --name "公众号内容" \
-  --cron "0 9 * * *" \
-  --message "生成公众号文章"
-
-# 每天中午 11 点提醒发布
-openclaw cron add \
-  --name "发布提醒" \
-  --cron "0 11 * * *" \
-  --message "提醒发布文章"</code></pre>
+    <h3 style="color: #a8edea; margin: 25px 0 15px 0; font-size: 18px;">✅ 好处：</h3>
+    <ul style="line-height: 2.2; color: #333; margin: 10px 0;">
+      <li>✅ 自动执行重复任务</li>
+      <li>✅ 不会忘记重要事项</li>
+      <li>✅ 解放双手</li>
+    </ul>
   </section>
 </section>
 
 <!-- 总结 -->
-<section style="background: linear-gradient(135deg, #07c160 0%, #00d66f 100%); padding: 30px 20px; margin: 50px 20px 30px 20px; border-radius: 15px; text-align: center;">
-  <h2 style="color: white; font-size: 24px; margin: 0 0 20px 0;">🎯 总结</h2>
-  <p style="color: rgba(255,255,255,0.9); font-size: 16px; margin: 0 0 20px 0;">掌握这 5 个技巧，让你的 OpenClaw 效率翻倍！</p>
-  <ul style="text-align: left; color: white; line-height: 2; margin: 0; padding-left: 20px;">
-    <li>1️⃣ 使用 --session-id 避免上下文干扰</li>
-    <li>2️⃣ 快速切换模型</li>
-    <li>3️⃣ 批量安装 Skill</li>
-    <li>4️⃣ 配置备份与恢复</li>
-    <li>5️⃣ 使用 cron 实现自动化</li>
-  </ul>
+<section style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 30px 20px; margin: 40px 20px 30px 20px; border-radius: 15px; text-align: center;">
+  <h2 style="color: white; font-size: 24px; margin: 0 0 20px 0;">🎉 总结</h2>
+  <p style="color: rgba(255,255,255,0.9); font-size: 16px; margin: 10px 0;">今天的 5 个技巧你都学会了吗？</p>
+  <p style="color: rgba(255,255,255,0.8); font-size: 14px; margin: 20px 0 0 0;">每个技巧都能让你的效率翻倍，赶紧试试吧！</p>
 </section>
 
-<!-- 相关资源 -->
-<section style="background: #f0f7ff; padding: 25px; border-radius: 15px; margin: 30px 20px; border-left: 5px solid #0066ff;">
-  <h2 style="color: #0066ff; font-size: 20px; margin: 0 0 20px 0;">🔗 相关资源</h2>
-  <ul style="line-height: 2.5; color: #333; margin: 0; padding-left: 20px;">
-    <li><strong>GitHub 项目：</strong>github.com/xxuan66/openclaw-recommended-skills</li>
-    <li><strong>ClawHub 技能市场：</strong>clawhub.ai</li>
-    <li><strong>OpenClaw 官方文档：</strong>docs.openclaw.ai</li>
-  </ul>
+<!-- 底部 -->
+<section style="text-align: center; padding: 20px; color: #999; font-size: 12px; border-top: 1px solid #eee; margin-top: 30px;">
+  <p style="margin: 5px 0;">作者：xuan</p>
+  <p style="margin: 5px 0;">日期：2026-03-11</p>
+  <p style="margin: 5px 0;">GitHub: <a href="https://github.com/xxuan66/openclaw-recommended-skills" style="color: #667eea;">github.com/xxuan66/openclaw-recommended-skills</a></p>
 </section>
 
-<!-- 结尾 -->
-<section style="text-align: center; padding: 40px 20px; margin: 40px 20px 20px 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 15px;">
-  <h2 style="color: white; font-size: 24px; margin: 0 0 15px 0;">🚀 祝你使用愉快！</h2>
-  <p style="color: rgba(255,255,255,0.9); font-size: 16px; margin: 0 0 20px 0;">明天见！继续分享更多精彩内容</p>
-  <p style="color: rgba(255,255,255,0.7); font-size: 14px; margin: 0;">发布日期：2026-03-11</p>
-</section>
-
-</section>
+</body>
+</html>

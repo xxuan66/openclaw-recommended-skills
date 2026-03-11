@@ -1,239 +1,253 @@
-# 📢 社交媒体推广文案
+# 📢 OpenClaw 推广内容
+
+> 用于社交媒体、公众号、技术社区的推广素材
 
 ---
 
-## 微博/推特 (280 字)
+## 🎯 一句话介绍
 
-### 版本 1 - 项目发布
+**中文：**
+- "OpenClaw - 让你的 AI Agent 拥有超能力！"
+- "精选 10+ 个超实用 OpenClaw Skill，效率翻倍！"
+- "GitHub 每日更新，打造最强 AI Agent 工具箱！"
+
+**英文：**
+- "OpenClaw - Supercharge your AI Agent!"
+- "10+ Essential OpenClaw Skills for Productivity!"
+
+---
+
+## 📱 社交媒体文案
+
+### Twitter / X
 
 ```
-🦞 发现了一个超好用的 AI 助手框架 - OpenClaw！
+🦞 OpenClaw 推荐 Skill 清单
 
-整理了 10 个必装的推荐 Skill：
-✅ searxng - 隐私搜索
-✅ self-improving-agent - 自我学习
-✅ github - GitHub 集成
-✅ summarize - 文档摘要
-✅ skill-vetter - 安全审查
+精选 10+ 个超实用的 OpenClaw Skill，让你的 AI Agent 效率翻倍！
+
+✅ 隐私搜索
+✅ 自我学习
+✅ 代码开发
+✅ 文档摘要
+✅ 安全审查
+
+GitHub 每日更新：https://github.com/xxuan66/openclaw-recommended-skills
+
+#OpenClaw #AI #Agent #Productivity #GitHub
+```
+
+### 微博
+
+```
+【🦞 OpenClaw 必装 Skill TOP10 推荐】
+
+使用 AI Agent 一段时间了，整理了 10 个超实用的 Skill，每个都能让效率翻倍！
+
+🔍 搜索类：searxng、tavily-search
+🧠 学习类：self-improving-agent、starmemo
+💻 开发类：github、skill-vetter
+📧 办公类：gog、summarize
+
+GitHub 仓库每日更新：https://github.com/xxuan66/openclaw-recommended-skills
+
+每个 Skill 都有详细介绍和使用技巧，新手也能快速上手！
+
+#OpenClaw #AI #效率工具 #GitHub
+```
+
+### 知乎
+
+```
+标题：有哪些让你相见恨晚的 OpenClaw Skill 推荐？
+
+回答：
+使用 OpenClaw 半年了，整理了一份精选 Skill 清单，持续每日更新！
+
+## 🌟 TOP10 推荐
+
+1. **searxng** - 隐私保护的本地元搜索引擎
+2. **self-improving-agent** - 自我反思 + 持续学习
+3. **tavily-search** - AI 优化的实时网络搜索
+4. **github** - GitHub CLI 集成
+5. **summarize** - 多格式文档摘要
+...（详见 GitHub）
+
+## 📦 快速开始
+
+```bash
+# 安装 ClawHub
+clawhub install searxng
+```
+
+## 🔗 完整清单
+
+GitHub 仓库每日更新：https://github.com/xxuan66/openclaw-recommended-skills
+
+包含：
+- ✅ 10+ 精选 Skill
+- ✅ 详细使用教程
+- ✅ 场景配置模板
+- ✅ 自动化工作流
+- ✅ 每日更新日志
+
+欢迎 Star⭐ 和贡献！
+```
+
+### V2EX
+
+```
+标题：[分享] OpenClaw 推荐 Skill 清单 - 每日更新
+
+正文：
+大家好，我整理了一份 OpenClaw 推荐 Skill 清单，每日自动更新！
+
+## 🎯 项目矩阵
+
+- **openclaw-recommended-skills** - Skill 推荐（每日更新）
+- **openclaw-starter** - 场景配置（每日更新）
+- **openclaw-workflows** - 自动化工作流（每日更新）
+- **agent-learning-path** - Agent 学习教程（每日更新）
+
+## 🌟 特色
+
+1. **每日更新** - 4 个仓库每日自动迭代
+2. **精心筛选** - 只推荐经过验证的 Skill
+3. **详细教程** - 每个 Skill 都有使用示例
+4. **场景配置** - 开箱即用的配置模板
+5. **安全审查** - 所有 Skill 经过安全审核
+
+## 📦 快速安装
+
+```bash
+# 安装推荐的 Skill
+clawhub install searxng
+clawhub install self-improving-agent
+clawhub install tavily-search
+```
+
+## 🔗 链接
 
 GitHub: https://github.com/xxuan66/openclaw-recommended-skills
 
-#OpenClaw #AI #Agent #GitHub #开源
+欢迎 Star⭐ 和提 Issue！
 ```
 
-### 版本 2 - 持续更新
+### 掘金
 
 ```
-📚 OpenClaw 推荐 Skill 清单更新了！
+标题：OpenClaw 必装 Skill TOP10，效率翻倍！
 
-本周新增：
-🔍 baidu-search - 百度搜索集成
-🧠 starmemo - 智能记忆系统
+摘要：精选 10+ 个超实用 OpenClaw Skill，包含搜索、学习、开发、办公等场景，GitHub 每日更新！
 
-持续更新中，欢迎 Star 关注 ⭐
-https://github.com/xxuan66/openclaw-recommended-skills
+正文：
+（使用公众号文章内容，末尾添加 GitHub 链接）
 
-#AI #Agent #OpenClaw
+GitHub 仓库：
+- https://github.com/xxuan66/openclaw-recommended-skills
+- https://github.com/xxuan66/openclaw-starter
+- https://github.com/xxuan66/openclaw-workflows
+- https://github.com/xxuan66/agent-learning-path
 ```
 
 ---
 
-## V2EX 分享帖
+## 📧 邮件推广模板
 
-### 标题
+### 主题
 ```
-[分享] 整理了 OpenClaw 必装的 10 个推荐 Skill，持续更新中
+🦞 OpenClaw 推荐 Skill 清单 - 让 AI Agent 效率翻倍！
 ```
 
 ### 正文
 ```
-各位 V 友，
+你好！
 
-最近在用 OpenClaw 这个 AI 助手框架，发现 ClawHub 上有很多实用的 Skill。
+我整理了一份 OpenClaw 推荐 Skill 清单，每日自动更新！
 
-为了方便大家（也方便自己），我创建了一个 GitHub 仓库，整理推荐的 Skill：
+## 🌟 精选 Skill
 
-🦞 https://github.com/xxuan66/openclaw-recommended-skills
+- searxng - 隐私搜索
+- self-improving-agent - 自我学习
+- tavily-search - AI 搜索
+- github - GitHub 集成
+- summarize - 文档摘要
+...（共 10+ 个）
 
-目前已收录 10 个精选 Skill，包括：
-- 搜索类：searxng, tavily-search, baidu-search
-- 学习类：self-improving-agent, starmemo
-- 开发类：github, skill-vetter
-- 办公类：gog, find-skills
-- 文档类：summarize
+## 📦 快速开始
 
-每个 Skill 都有详细介绍、安装命令和使用场景。
+访问 GitHub 仓库：
+https://github.com/xxuan66/openclaw-recommended-skills
 
-欢迎大家：
-1. Star 支持一下 ⭐
-2. 推荐更多好用的 Skill
-3. 提交 Issue/PR
+包含详细教程和配置示例！
 
-会持续更新，保持最新！
+## 🔄 每日更新
 
----
-GitHub: https://github.com/xxuan66/openclaw-recommended-skills
+4 个仓库每日自动迭代：
+- Skill 推荐
+- 场景配置
+- 工作流示例
+- 学习教程
+
+欢迎 Star⭐ 支持！
+
+祝好，
+xuan
 ```
 
 ---
 
-## 掘金文章
+## 🎬 视频脚本（B 站/YouTube）
 
 ### 标题
 ```
-OpenClaw 入门指南：10 个必装的推荐 Skill（持续更新）
+OpenClaw 必装 Skill TOP10！效率翻倍的神器！
 ```
 
-### 摘要
+### 简介
 ```
-本文精选了 10 个 OpenClaw 必装 Skill，涵盖搜索、学习、开发、办公等多个场景，帮助你快速提升 AI 助手能力。
-```
-
-### 正文大纲
-```markdown
-# OpenClaw 入门指南：10 个必装的推荐 Skill
-
-## 前言
-- OpenClaw 简介
-- 为什么需要 Skill
-
-## 精选 Skill 推荐
-
-### 🔍 搜索类
-1. searxng - 隐私保护的元搜索引擎
-2. tavily-search - AI 优化的实时搜索
-3. baidu-search - 中文搜索首选
-
-### 🧠 学习/记忆类
-4. self-improving-agent - 会自我改进的 Agent
-5. starmemo - 结构化记忆系统
-
-### 💻 开发类
-6. github - GitHub 全套管理
-7. skill-vetter - 安全审查工具
-
-### 📧 办公类
-8. gog - Google Workspace 集成
-9. find-skills - 发现更多 Skill
-
-### 📄 文档类
-10. summarize - 多格式文档摘要
-
-## 快速开始
-- 批量安装脚本
-- 配置指南
-
-## 总结
-- 推荐组合
-- 使用建议
-
-## 相关链接
-- GitHub: https://github.com/xxuan66/openclaw-recommended-skills
-- 欢迎 Star 和贡献！
-```
-
----
-
-## 知乎回答
-
-### 相关问题
-- "有哪些好用的 AI 助手工具？"
-- "OpenClaw 值得学习吗？"
-- "如何提升 AI 助手的能力？"
-
-### 回答模板
-```
-推荐一个我正在维护的 OpenClaw Skill 清单：
-
-https://github.com/xxuan66/openclaw-recommended-skills
-
-整理了 10 个必装的 Skill，包括：
-1. searxng - 隐私搜索
-2. self-improving-agent - 自我学习
-3. github - GitHub 集成
-...
-
-每个都有详细介绍和安装指南，持续更新中。
-
-欢迎 Star 支持！⭐
-```
-
----
-
-## Reddit 帖子
-
-### r/selfhosted
-```
-Title: [Showcase] Curated list of recommended Skills for OpenClaw (self-hosted AI assistant)
-
-Body:
-Hi everyone,
-
-I've been using OpenClaw lately and created a curated list of recommended Skills:
-
-https://github.com/xxuan66/openclaw-recommended-skills
-
-Features:
-- 10 carefully selected Skills
-- Categorized by function (search, memory, dev, productivity)
-- Installation guides and usage examples
-- Weekly updates
-
-Would love to get your feedback and suggestions!
+🦞 OpenClaw 推荐 Skill 清单
 
 GitHub: https://github.com/xxuan66/openclaw-recommended-skills
+
+时间轴：
+00:00 开场
+00:30 Skill 清单介绍
+01:00 TOP1-3 详细介绍
+03:00 TOP4-6 详细介绍
+05:00 TOP7-10 快速浏览
+07:00 安装教程
+08:00 总结
+
+#OpenClaw #AI #效率工具
 ```
 
 ---
 
-## Product Hunt 发布
+## 📊 推广渠道清单
 
-### 产品名称
-```
-OpenClaw Recommended Skills - Curated Skill List
-```
-
-### 标语
-```
-The best Skills for your OpenClaw AI assistant, updated weekly
-```
-
-### 描述
-```
-A curated collection of the best Skills for OpenClaw, the self-hosted AI assistant framework.
-
-What's included:
-✅ 10+ carefully selected Skills
-✅ Categorized recommendations
-✅ Installation guides
-✅ Usage examples
-✅ Weekly updates
-
-Categories:
-- 🔍 Search (searxng, tavily-search, baidu-search)
-- 🧠 Memory & Learning (self-improving-agent, starmemo)
-- 💻 Development (github, skill-vetter)
-- 📧 Productivity (gog, find-skills)
-- 📄 Content (summarize)
-
-Perfect for:
-- OpenClaw users looking to enhance their AI assistant
-- Developers exploring AI agent capabilities
-- Anyone interested in self-hosted AI tools
-
-Check it out and let me know what you think!
-```
+| 渠道 | 状态 | 链接 |
+|------|------|------|
+| GitHub | ✅ 已创建 | https://github.com/xxuan66/openclaw-recommended-skills |
+| 微信公众号 | ✅ 已推送 | - |
+| 知乎 | ⏳ 待发布 | - |
+| 掘金 | ⏳ 待发布 | - |
+| V2EX | ⏳ 待发布 | - |
+| Twitter/X | ⏳ 待发布 | - |
+| 微博 | ⏳ 待发布 | - |
+| B 站 | ⏳ 待发布 | - |
 
 ---
 
-## 使用建议
+## 🎯 推广策略
 
-1. **分阶段发布** - 不要一次性全发
-2. **根据平台调整** - 每个平台语气不同
-3. **配图更佳** - 添加项目截图
-4. **互动回复** - 及时回复评论
-5. **持续更新** - 保持活跃度
+1. **GitHub 优化** - README、标签、话题
+2. **社交媒体** - 多平台同步发布
+3. **技术社区** - 知乎、掘金、V2EX
+4. **内容营销** - 公众号文章、视频教程
+5. **社区互动** - 回复问题、分享经验
 
 ---
 
-**创建时间:** 2026-03-10
+**最后更新：** 2026-03-11
+**维护者：** xuan
