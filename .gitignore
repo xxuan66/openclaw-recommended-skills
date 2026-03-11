@@ -49,7 +49,7 @@ __pycache__/
 .venv/
 venv/
 
-# 项目子目录（这些是独立的 git 仓库）
+# ===== 排除子项目目录（这些是独立的 git 仓库）=====
 github-repos/
 projects/
 skills/
@@ -59,6 +59,8 @@ scripts/
 memory/
 wechat_articles/
 wechat_daily/
+output/
 
 # 其他
 JD_CRAWLER_STATUS.md
+REPOSITORY_FIX_REPORT.md
