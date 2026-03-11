@@ -238,6 +238,49 @@ openclaw cron run <job-id>
 
 ---
 
-**更新日期：** 2026-03-11  
+---
+
+### 💡 补充技巧：Session 隔离最佳实践
+
+**技能名称：** session-management  
+**版本：** 1.0  
+**类别：** 🔧 效率
+
+**核心用法：**
+```bash
+# 独立搜索会话（避免上下文污染）
+openclaw agent -m "搜索内容" --session-id search-$(date +%s)
+
+# 独立任务会话
+openclaw agent -m "执行任务" --session-id task-$(date +%Y%m%d)
+
+# 批量操作使用 isolated session
+openclaw cron add --sessionTarget isolated ...
+```
+
+**💡 技巧说明：**
+1. **命名规范** - 使用 `search-时间戳`、`task-日期` 等清晰命名
+2. **自动清理** - 定期清理过期 session，避免内存占用
+3. **上下文隔离** - 每个独立任务使用独立 session，避免干扰主对话
+4. **批量操作** - cron job 统一使用 isolated session 模式
+
+**推荐场景：**
+- 🔍 搜索操作：每次搜索独立 session
+- 📊 数据分析：大批量数据处理用独立 session
+- ⏰ 定时任务：cron 统一用 isolated 模式
+- 🔄 模型切换：切换前后用不同 session
+
+**相关配置：**
+```bash
+# 查看活跃 session
+openclaw sessions list --active
+
+# 清理过期 session
+openclaw sessions cleanup --older-than 24h
+```
+
+---
+
+**更新日期：** 2026-03-11 08:25  
 **维护者：** [@xxuan66](https://github.com/xxuan66)  
 **下次更新：** 2026-03-12 09:00 (Day 071)
