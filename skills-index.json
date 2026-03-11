@@ -1,6 +1,6 @@
 {
-  "version": "1.0.0",
-  "last_updated": "2026-03-10",
+  "version": "1.1.0",
+  "last_updated": "2026-03-12",
   "maintainer": "xxuan66",
   "source": "ClawHub (https://clawhub.ai)",
   "skills": [
@@ -113,6 +113,50 @@
       "install_cmd": "clawhub install starmemo",
       "rating": 4,
       "recommended": true
+    },
+    {
+      "slug": "github-trending",
+      "name": "GitHub Trending",
+      "version": "1.0.0",
+      "category": "discovery",
+      "description": "获取 GitHub Trending 热门项目信息，支持时间范围筛选",
+      "tags": ["GitHub", "趋势", "开源", "发现"],
+      "install_cmd": "clawhub install github-trending",
+      "rating": 4,
+      "recommended": true
+    },
+    {
+      "slug": "xiaomi-recruitment",
+      "name": "小米招聘监控",
+      "version": "1.0.0",
+      "category": "career",
+      "description": "小米 2026 春招岗位信息采集与更新",
+      "tags": ["招聘", "小米", "求职"],
+      "install_cmd": "clawhub install xiaomi-recruitment",
+      "rating": 4,
+      "recommended": false
+    },
+    {
+      "slug": "xiaohongshu-mcp",
+      "name": "小红书 MCP",
+      "version": "1.0.0",
+      "category": "social",
+      "description": "小红书内容发布、搜索、分析自动化",
+      "tags": ["小红书", "社交", "内容", "自动化"],
+      "install_cmd": "clawhub install xiaohongshu-mcp",
+      "rating": 4,
+      "recommended": false
+    },
+    {
+      "slug": "douyin-hot-trend",
+      "name": "抖音热榜",
+      "version": "1.0.0",
+      "category": "social",
+      "description": "获取抖音热榜/热搜榜数据，热门视频与挑战赛",
+      "tags": ["抖音", "热榜", "趋势"],
+      "install_cmd": "clawhub install douyin-hot-trend",
+      "rating": 4,
+      "recommended": false
     }
   ]
 }

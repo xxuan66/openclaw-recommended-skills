@@ -2,8 +2,8 @@
 
 > 精选优质 OpenClaw Skill，持续更新中...
 
-[![Updated](https://img.shields.io/badge/updated-2026--03--10-blue)](https://github.com/xxuan66/openclaw-recommended-skills)
-[![Skills](https://img.shields.io/badge/skills-10-green)](https://github.com/xxuan66/openclaw-recommended-skills)
+[![Updated](https://img.shields.io/badge/updated-2026--03--12-blue)](https://github.com/xxuan66/openclaw-recommended-skills)
+[![Skills](https://img.shields.io/badge/skills-14-green)](https://github.com/xxuan66/openclaw-recommended-skills)
 [![License](https://img.shields.io/badge/license-MIT-blue)](https://github.com/xxuan66/openclaw-recommended-skills/blob/main/LICENSE)
 
 ---
@@ -31,6 +31,10 @@
 | 8 | **find-skills** | 0.1.0 | 🔎 发现 | 帮你发现和安装新 Skill |
 | 9 | **baidu-search** | 1.1.1 | 🔍 搜索 | 百度 AI 搜索引擎集成 |
 | 10 | **starmemo** | 2.0.0 | 🧠 记忆 | 结构化记忆 + 知识库 + AI 优化 |
+| 11 | **github-trending** | 1.0.0 | 🔎 发现 | GitHub Trending 热门项目追踪 |
+| 12 | **xiaomi-recruitment** | 1.0.0 | 💼 招聘 | 小米 2026 春招岗位监控 |
+| 13 | **xiaohongshu-mcp** | 1.0.0 | 📱 社交 | 小红书内容发布与分析 |
+| 14 | **douyin-hot-trend** | 1.0.0 | 📱 社交 | 抖音热榜/热搜数据获取 |
 
 ---
 
@@ -71,6 +75,25 @@
 | gog | 1.0.0 | Google Workspace 全套 (Gmail/Calendar/Drive) | `clawhub install gog` |
 | find-skills | 0.1.0 | 发现和安装新 Skill | `clawhub install find-skills` |
 
+### 🔎 发现/趋势类
+
+| Skill | 版本 | 描述 | 安装命令 |
+|-------|------|------|---------|
+| github-trending | 1.0.0 | GitHub Trending 热门项目追踪 | `clawhub install github-trending` |
+
+### 📱 社交/内容类
+
+| Skill | 版本 | 描述 | 安装命令 |
+|-------|------|------|---------|
+| xiaohongshu-mcp | 1.0.0 | 小红书内容发布与分析 | `clawhub install xiaohongshu-mcp` |
+| douyin-hot-trend | 1.0.0 | 抖音热榜/热搜数据获取 | `clawhub install douyin-hot-trend` |
+
+### 💼 招聘类
+
+| Skill | 版本 | 描述 | 安装命令 |
+|-------|------|------|---------|
+| xiaomi-recruitment | 1.0.0 | 小米 2026 春招岗位监控 | `clawhub install xiaomi-recruitment` |
+
 ---
 
 ## 📦 快速安装
@@ -79,7 +102,7 @@
 
 ```bash
 # 安装全部推荐 Skill
-for skill in searxng self-improving-agent tavily-search github summarize skill-vetter gog find-skills baidu-search starmemo; do
+for skill in searxng self-improving-agent tavily-search github summarize skill-vetter gog find-skills baidu-search starmemo github-trending xiaomi-recruitment xiaohongshu-mcp douyin-hot-trend; do
   clawhub install $skill
 done
 
@@ -115,6 +138,15 @@ clawhub inspect <skill-name>
 ---
 
 ## 🔄 更新日志
+
+### 2026-03-12 - 版本 1.1.0
+
+- ✅ 索引从 10 扩展至 14 个 Skill
+- ✅ 新增发现/趋势类：github-trending
+- ✅ 新增社交/内容类：xiaohongshu-mcp、douyin-hot-trend
+- ✅ 新增招聘类：xiaomi-recruitment
+- ✅ 分类索引新增 3 个分类
+- ✅ README 技能表格更新
 
 ### 2026-03-10 - 初始版本
 
@@ -158,4 +190,4 @@ clawhub inspect <skill-name>
 ---
 
 **维护者:** @xxuan66  
-**最后更新:** 2026-03-10
+**最后更新:** 2026-03-12
