@@ -11,14 +11,54 @@ Thumbs.db
 *.swp
 *.swo
 
-# Config (如果有敏感信息)
+# 敏感配置
+openclaw.json
 *.env
-config.local.json
-*.token
+*.local.json
+config.local.*
+*.secret
+*.key
+*.pem
 
-# Node modules (如果有)
+# Node modules
 node_modules/
 
 # Build outputs
 dist/
 build/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Backup files
+*.bak
+*.backup
+
+# Credentials
+credentials.json
+token.json
+auth.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+.venv/
+venv/
+
+# 项目子目录（这些是独立的 git 仓库）
+github-repos/
+projects/
+skills/
+content/
+docs/
+scripts/
+memory/
+wechat_articles/
+wechat_daily/
+
+# 其他
+JD_CRAWLER_STATUS.md
