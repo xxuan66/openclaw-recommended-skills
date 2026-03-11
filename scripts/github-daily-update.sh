@@ -46,6 +46,13 @@ openclaw agent \
   --message "执行 $(date +%Y-%m-%d) GitHub 更新：添加或优化工作流示例，小步迭代。注意：只写公开内容，不要添加本地数据追踪" \
   --thinking minimal
 
+# 更新 agent-learning-path（每日小幅度迭代）
+echo "  - agent-learning-path（每日小幅度优化）"
+openclaw agent \
+  --session-id github-$(date +%Y%m%d) \
+  --message "执行 $(date +%Y-%m-%d) GitHub 更新：小幅度迭代优化 agent-learning-path 仓库，修复错误、补充内容、优化表达。改动不要太大，保持内容质量。" \
+  --thinking minimal
+
 echo "✅ GitHub 更新完成"
 
 # 3. 切回 qwen 模型（默认）
