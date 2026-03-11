@@ -25,11 +25,11 @@ fi
 echo ""
 echo "🔄 开始更新 GitHub 项目..."
 
-# 更新 openclaw-recommended-skills
-echo "  - openclaw-recommended-skills"
+# 更新 openclaw-recommended-skills（主仓库，小步迭代）
+echo "  - openclaw-recommended-skills（主仓库）"
 openclaw agent \
   --session-id github-$(date +%Y%m%d) \
-  --message "执行 $(date +%Y-%m-%d) GitHub 更新：更新 DAILY_UPDATES.md，添加今日技巧。注意：只写公开内容，不要添加本地数据追踪（如 Stars/Forks/Issues/Commits 统计、本周目标等）" \
+  --message "执行 $(date +%Y-%m-%d) GitHub 更新：在原有内容基础上小步迭代，完善现有章节或添加新技巧。改动不要太大，保持内容质量。注意：只写公开内容，不要添加本地数据追踪" \
   --thinking minimal
 
 # 更新 openclaw-starter
