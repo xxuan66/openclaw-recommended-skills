@@ -32,18 +32,18 @@ openclaw agent \
   --message "执行 $(date +%Y-%m-%d) GitHub 更新：在原有内容基础上小步迭代，完善现有章节或添加新技巧。改动不要太大，保持内容质量。注意：只写公开内容，不要添加本地数据追踪" \
   --thinking minimal
 
-# 更新 openclaw-starter
-echo "  - openclaw-starter"
+# 更新 openclaw-starter（每日更新）
+echo "  - openclaw-starter（每日）"
 openclaw agent \
   --session-id github-$(date +%Y%m%d) \
-  --message "更新 starter 配置指南或使用技巧" \
+  --message "执行 $(date +%Y-%m-%d) GitHub 更新：添加或优化场景配置，小步迭代。注意：只写公开内容，不要添加本地数据追踪" \
   --thinking minimal
 
-# 更新 openclaw-workflows
-echo "  - openclaw-workflows"
+# 更新 openclaw-workflows（每日更新）
+echo "  - openclaw-workflows（每日）"
 openclaw agent \
   --session-id github-$(date +%Y%m%d) \
-  --message "更新 workflows 索引或添加新工作流示例" \
+  --message "执行 $(date +%Y-%m-%d) GitHub 更新：添加或优化工作流示例，小步迭代。注意：只写公开内容，不要添加本地数据追踪" \
   --thinking minimal
 
 echo "✅ GitHub 更新完成"
