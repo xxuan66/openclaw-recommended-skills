@@ -206,25 +206,25 @@ openclaw models set <model-name>
 openclaw config get agents.defaults.model.primary
 
 # 定时切换（cron）
-openclaw cron add --name "切换到 mimo" --cron "0 22 * * *" \
-  --message "openclaw models set mimo/mimo-claw-0301"
+openclaw cron add --name "切换到备用模型" --cron "0 22 * * *" \
+  --message "openclaw models set <provider>/<model-name>"
 ```
 
 **💡 技巧说明：**
-1. **场景分离** - 夜间任务用 mimo（批量处理），日常对话用 qwen（响应快）
+1. **场景分离** - 夜间任务用备用模型（批量处理），日常对话用默认模型（响应快）
 2. **自动切换** - 用 cron 定时切换，避免手动操作
 3. **成本优化** - 批量任务用低成本模型，交互用高质量模型
 4. **session 隔离** - 切换模型时用不同 session，避免上下文混乱
 
 **推荐配置：**
 ```bash
-# 晚上 22:00 切换到 mimo（夜间任务）
-openclaw cron add --name "切换到小米模型" --cron "0 22 * * *" \
-  --message "openclaw models set mimo/mimo-claw-0301"
+# 晚上 22:00 切换到备用模型（夜间任务）
+openclaw cron add --name "切换到备用模型" --cron "0 22 * * *" \
+  --message "openclaw models set <provider>/<model-name>"
 
-# 早上 9:00 切回 qwen（日常使用）
+# 早上 9:00 切回默认模型（日常使用）
 openclaw cron add --name "恢复默认模型" --cron "0 9 * * *" \
-  --message "openclaw models set bailian/qwen3.5-plus"
+  --message "openclaw models set <default-model>"
 ```
 
 ---

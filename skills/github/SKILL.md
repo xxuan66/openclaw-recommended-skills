@@ -42,9 +42,9 @@ https://x-access-token:ghp_xxx@github.com/owner/repo.git
 ### 标准流程
 每天 06:00 自动执行（通过 cron），流程：
 ```
-1. 切换到 mimo 模型（夜间任务）
-2. 更新 3 个仓库内容
-3. 切回 qwen 模型
+1. 切换到备用模型（夜间任务）
+2. 更新 4 个仓库内容
+3. 切回默认模型
 4. 发送完成通知
 ```
 
@@ -257,7 +257,7 @@ gh pr checks 55 --repo xxuan66/openclaw-recommended-skills
 GitHub 更新已配置为 cron 任务：
 - **任务 ID:** 4d7ebe29-d315-4e61-b146-004ef1b3c52a
 - **执行时间:** 每天 06:00
-- **模型:** mimo（夜间）→ qwen（日常）
+- **模型:** 备用模型（夜间）→ 默认模型（日常）
 
 ### 查看任务状态
 ```bash
