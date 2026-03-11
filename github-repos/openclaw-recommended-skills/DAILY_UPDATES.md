@@ -129,8 +129,10 @@ openclaw agent -m "搜索 AI Agent 框架" --session-id search-$(date +%s)
 ### ✅ 今日完成
 
 #### openclaw-recommended-skills
-- ✅ DAILY_UPDATES.md 更新（Day 070）
-- ✅ 今日技巧：Cron 自动化最佳实践
+- ✅ DAILY_UPDATES.md 更新（Day 070，3 次更新）
+- ✅ 今日技巧 1：Cron 自动化最佳实践（06:00）
+- ✅ 今日技巧 2：Session 隔离最佳实践（08:25）
+- ✅ 今日技巧 3：模型切换最佳实践（08:41）
 - ✅ 安全规则更新（模型名称脱敏）
 
 #### openclaw-starter
@@ -197,9 +199,9 @@ openclaw cron run <job-id>
 
 | 项目 | Stars | Forks | Issues | Commits |
 |------|-------|-------|--------|---------|
-| recommended-skills | 0 | 0 | 0 | 6 |
-| starter | 0 | 0 | 0 | 4 |
-| workflows | 0 | 0 | 0 | 4 |
+| recommended-skills | 0 | 0 | 0 | 9 |
+| starter | 0 | 0 | 0 | 5 |
+| workflows | 0 | 0 | 0 | 5 |
 
 **累计目标：** 70 天持续更新 ✅
 
@@ -208,11 +210,15 @@ openclaw cron run <job-id>
 ### 🔗 今日提交
 
 **openclaw-recommended-skills:**
-- [x] DAILY_UPDATES.md 更新（Day 070）
-- [x] 今日技巧：Cron 自动化
+- [x] DAILY_UPDATES.md 更新 x3（06:00 / 08:25 / 08:41）
+- [x] 技巧 1：Cron 自动化最佳实践
+- [x] 技巧 2：Session 隔离最佳实践
+- [x] 技巧 3：模型切换最佳实践
 
 **openclaw-starter:**
 - [x] cron 场景配置模板
+- [x] CONFIG_GUIDE.md 更新（cron/automation）
+- [x] README.md 更新（cron-scenario 文档）
 
 **openclaw-workflows:**
 - [x] cron-automation 工作流示例
@@ -283,6 +289,55 @@ openclaw sessions cleanup --older-than 24h
 
 ---
 
-**更新日期：** 2026-03-11 08:25  
+### 💡 补充技巧 2：模型切换最佳实践
+
+**技能名称：** model-switching  
+**版本：** 1.0  
+**类别：** 🔄 效率优化
+
+**核心用法：**
+```bash
+# 查看当前模型
+openclaw config get agents.defaults.model.primary
+
+# 手动切换模型
+openclaw models set <provider>/<model-name>
+
+# 配置定时切换（cron）
+openclaw cron add \
+  --name "switch-to-night" \
+  --schedule "0 22 * * *" \
+  --message "切换到夜间低成本模型" \
+  --sessionTarget main
+```
+
+**💡 技巧说明：**
+1. **成本优化** - 夜间切到低成本模型，日间恢复高性能模型
+2. **自动切换** - 使用 cron 实现全自动，无需手动操作
+3. **快速回滚** - 配置好默认模型，切换失败自动回退
+4. **日志追踪** - 记录每次切换时间，便于排查问题
+
+**推荐配置：**
+```json
+{
+  "schedule": { "kind": "cron", "expr": "0 22 * * *" },
+  "payload": { "kind": "systemEvent", "text": "已切换到夜间模型" },
+  "sessionTarget": "main"
+}
+```
+
+**最佳实践：**
+- 夜间（22:00）：切换到低成本模型执行后台任务
+- 白天（09:00）：切换回默认模型用于日常交互
+- 使用 `systemEvent` 类型提醒，主会话可见
+- 定期检查切换日志确保正常执行
+
+**相关资源：**
+- [openclaw-starter/cron-scenario.json](https://github.com/xxuan66/openclaw-starter/blob/main/configs/cron-scenario.json)
+- [openclaw-workflows/cron-automation.md](https://github.com/xxuan66/openclaw-workflows/blob/main/productivity/cron-automation.md)
+
+---
+
+**更新日期：** 2026-03-11 08:41  
 **维护者：** [@xxuan66](https://github.com/xxuan66)  
 **下次更新：** 2026-03-12 09:00 (Day 071)
