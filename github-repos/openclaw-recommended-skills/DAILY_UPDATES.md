@@ -136,6 +136,8 @@ openclaw agent -m "搜索 AI Agent 框架" --session-id search-$(date +%s)
 #### openclaw-starter
 - ✅ 新增 cron 场景配置模板
 - ✅ 更新定时任务使用指南
+- ✅ CONFIG_GUIDE.md 更新（添加 cron/automation 配置指南）
+- ✅ README.md 更新（添加 cron-scenario.json 文档）
 
 #### openclaw-workflows
 - ✅ 添加 cron-automation 工作流示例
