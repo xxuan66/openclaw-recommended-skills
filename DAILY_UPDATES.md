@@ -328,6 +328,110 @@ python scripts/douyin_trending.py --json
 
 ---
 
-**更新日期：** 2026-03-12  
+## 2026-03-13 - Day 004 📝
+
+**主题：** 技能完善 + 实用小技巧补充
+
+### ✅ 今日完成
+
+#### openclaw-recommended-skills
+- ✅ README 日期更新至 2026-03-13
+- ✅ skills-index.json 版本升级至 v1.1.1
+- ✅ 新增「快速技巧」栏目
+
+#### openclaw-starter
+- ✅ README 日期更新
+- ✅ CONFIG_GUIDE.md 补充环境变量说明
+
+#### openclaw-workflows
+- ✅ README 日期更新
+- ✅ WORKFLOWS_INDEX.md 补充使用建议
+
+---
+
+### 💡 今日技巧：天气查询（weather skill）
+
+**技能名称：** weather  
+**版本：** 1.0.0  
+**类别：** 🌤️ 实用工具
+
+**快速使用：**
+```bash
+# 查看当前天气
+openclaw agent -m "北京现在天气怎么样？"
+
+# 查看天气预报
+openclaw agent -m "上海未来三天天气预报"
+
+# 温度提醒（适合出行）
+openclaw agent -m "广州今天需要带伞吗？"
+```
+
+**💡 技巧说明：**
+- 无需 API Key，使用 wttr.in 或 Open-Meteo 接口
+- 支持中文城市名查询
+- 可配合 cron 设置每日天气提醒
+
+**适用场景：**
+- 每日出行天气提醒
+- 旅行前天气查询
+- 智能家居环境感知
+
+**安装命令：**
+```bash
+clawhub install weather
+```
+
+---
+
+### 📊 今日数据
+
+| 项目 | Stars | Forks | Issues | Commits |
+|------|-------|-------|--------|---------|
+| recommended-skills | 0 | 0 | 0 | 10 |
+| starter | 0 | 0 | 0 | 7 |
+| workflows | 0 | 0 | 0 | 7 |
+
+---
+
+### 🔗 今日提交
+
+**openclaw-recommended-skills:**
+- [x] DAILY_UPDATES.md 添加 Day 004
+- [x] README 日期更新至 2026-03-13
+- [x] skills-index.json v1.1.1 更新
+
+**openclaw-starter:**
+- [x] README 日期更新
+- [x] CONFIG_GUIDE.md 补充环境变量说明
+
+**openclaw-workflows:**
+- [x] README 日期更新
+- [x] WORKFLOWS_INDEX.md 补充使用建议
+
+---
+
+### 📝 明日预告 (Day 005)
+
+**主题：** 内容深度优化 + 用户反馈整理
+
+**计划更新：**
+- 📖 README 增加使用案例
+- 🔧 技能评分标准补充说明
+- ⚡ workflows 添加更多模板
+
+---
+
+### 🎯 本周目标（进度）
+
+| 项目 | 目标 Stars | 更新天数 | 进度 |
+|------|-----------|---------|------|
+| recommended-skills | 10 ⭐ | 7/7 | 4/7 |
+| starter | 5 ⭐ | 7/7 | 4/7 |
+| workflows | 5 ⭐ | 7/7 | 4/7 |
+
+---
+
+**更新日期：** 2026-03-13  
 **维护者：** [@xxuan66](https://github.com/xxuan66)  
-**下次更新：** 2026-03-13 09:00 (Day 004)
+**下次更新：** 2026-03-14 09:00 (Day 005)

@@ -2,7 +2,7 @@
 
 > 精选优质 OpenClaw Skill，持续更新中...
 
-[![Updated](https://img.shields.io/badge/updated-2026--03--12-blue)](https://github.com/xxuan66/openclaw-recommended-skills)
+[![Updated](https://img.shields.io/badge/updated-2026--03--13-blue)](https://github.com/xxuan66/openclaw-recommended-skills)
 [![Skills](https://img.shields.io/badge/skills-14-green)](https://github.com/xxuan66/openclaw-recommended-skills)
 [![License](https://img.shields.io/badge/license-MIT-blue)](https://github.com/xxuan66/openclaw-recommended-skills/blob/main/LICENSE)
 
@@ -35,6 +35,28 @@
 | 12 | **xiaomi-recruitment** | 1.0.0 | 💼 招聘 | 小米 2026 春招岗位监控 |
 | 13 | **xiaohongshu-mcp** | 1.0.0 | 📱 社交 | 小红书内容发布与分析 |
 | 14 | **douyin-hot-trend** | 1.0.0 | 📱 社交 | 抖音热榜/热搜数据获取 |
+
+---
+
+## ⚡ 快速技巧
+
+> 每日精选一个实用小技巧，帮助你更好地使用 OpenClaw。
+
+### 今日技巧：天气查询
+
+使用 `weather` Skill 可以快速查询天气信息，无需 API Key：
+
+```bash
+# 直接对话查询
+openclaw agent -m "北京今天天气怎么样？"
+
+# 设置每日天气提醒（配合 cron）
+# 在 HEARTBEAT.md 或 cron 配置中添加
+```
+
+**安装：** `clawhub install weather`
+
+更多技巧请查看 [DAILY_UPDATES.md](./DAILY_UPDATES.md)
 
 ---
 
@@ -139,6 +161,13 @@ clawhub inspect <skill-name>
 
 ## 🔄 更新日志
 
+### 2026-03-13 - 版本 1.1.1
+
+- ✅ README 日期更新至 2026-03-13
+- ✅ 新增「快速技巧」栏目
+- ✅ skills-index.json 版本升级至 v1.1.1
+- ✅ DAILY_UPDATES.md 添加 Day 004
+
 ### 2026-03-12 - 版本 1.1.0
 
 - ✅ 索引从 10 扩展至 14 个 Skill
@@ -190,4 +219,4 @@ clawhub inspect <skill-name>
 ---
 
 **维护者:** @xxuan66  
-**最后更新:** 2026-03-12
+**最后更新:** 2026-03-13
