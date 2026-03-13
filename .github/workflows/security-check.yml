@@ -1,0 +1,66 @@
+name: 🔒 安全检查
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  security-check:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: 📥 Checkout code
+        uses: actions/checkout@v4
+      
+      - name: 🔍 检查敏感文件
+        run: |
+          echo "=== 安全检查 ==="
+          
+          # 敏感配置文件
+          SENSITIVE_FILES=(
+            "AGENTS.md"
+            "SOUL.md"
+            "USER.md"
+            "TOOLS.md"
+            "HEARTBEAT.md"
+            "IDENTITY.md"
+            ".openclaw/"
+            "memory/"
+          )
+          
+          ERRORS=0
+          for file in "${SENSITIVE_FILES[@]}"; do
+            if git ls-files --error-unmatch "$file" &>/dev/null; then
+              echo "❌ 发现敏感文件：$file"
+              ((ERRORS++))
+            fi
+          done
+          
+          # Skill 源码
+          if git ls-files --error-unmatch "skills/" &>/dev/null; then
+            echo "❌ skills/ 目录不应该被跟踪"
+            ((ERRORS++))
+          fi
+          
+          # 文件总数检查
+          FILE_COUNT=$(git ls-files | wc -l)
+          echo "📊 文件总数：$FILE_COUNT"
+          if [ "$FILE_COUNT" -gt 50 ]; then
+            echo "⚠️  文件数量异常：$FILE_COUNT (建议 < 50)"
+          fi
+          
+          if [ "$ERRORS" -gt 0 ]; then
+            echo "❌ 安全检查失败！发现 $ERRORS 个错误"
+            exit 1
+          else
+            echo "✅ 安全检查通过"
+            exit 0
+          fi
+      
+      - name: 📋 输出文件列表
+        run: |
+          echo "=== 跟踪的文件列表 ==="
+          git ls-files | sort
+          echo "========================"

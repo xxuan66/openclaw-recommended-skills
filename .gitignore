@@ -49,18 +49,45 @@ __pycache__/
 .venv/
 venv/
 
-# ===== 排除子项目目录（这些是独立的 git 仓库）=====
+# ===== OpenClaw 工作区文件（私人配置）=====
+.openclaw/
+AGENTS.md
+SOUL.md
+USER.md
+TOOLS.md
+HEARTBEAT.md
+IDENTITY.md
+memory/
+
+# ===== 其他独立项目（有自己的 git 仓库）=====
 github-repos/
 projects/
-skills/
 content/
 docs/
-scripts/
-memory/
+
+# ===== Skill 源码（应该在 ClawHub 或各自仓库）=====
+skills/
 wechat_articles/
 wechat_daily/
 output/
+paper_reading_notes/
 
-# 其他
+# ===== 脚本（个人自动化，不应该公开）=====
+scripts/
+!scripts/security-check.sh
+
+# ===== 其他 =====
+.clawhub/
 JD_CRAWLER_STATUS.md
 REPOSITORY_FIX_REPORT.md
+MODEL_SWITCH_SCHEDULE.md
+GITHUB_PUBLISHING_RULES.md
+GITHUB_SECURITY_SUMMARY.md
+GITHUB_UPDATE_SCHEDULE.md
+
+# 微信运营相关文件（个人工作流程）
+WECHAT_CONTENT_PLAN.md
+WECHAT_OFFICIAL_ACCOUNT_GUIDE.md
+WECHAT_PUBLISH_STATUS.md
+WECHAT_PUBLISH_SUCCESS.md
+WECHAT_QUICK_START.md
