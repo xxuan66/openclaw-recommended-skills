@@ -74,7 +74,6 @@ paper_reading_notes/
 
 # ===== 脚本（个人自动化，不应该公开）=====
 scripts/
-!scripts/security-check.sh
 
 # ===== 其他 =====
 .clawhub/
