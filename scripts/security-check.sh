@@ -51,7 +51,6 @@ fi
 # ===== 3. 检查个人工作文件 =====
 echo "📋 检查个人工作文件..."
 WORK_FILES=(
-    "scripts/"
     "wechat_articles/"
     "wechat_daily/"
     "paper_reading_notes/"
@@ -64,6 +63,13 @@ for file in "${WORK_FILES[@]}"; do
         ((WARNINGS++))
     fi
 done
+
+# scripts/ 目录检查（但排除 security-check.sh）
+SCRIPT_COUNT=$(git ls-files scripts/ | grep -v "security-check.sh" | wc -l)
+if [ "$SCRIPT_COUNT" -gt 0 ]; then
+    echo -e "${YELLOW}⚠️  scripts/ 目录有 $SCRIPT_COUNT 个文件（security-check.sh 除外）${NC}"
+    ((WARNINGS++))
+fi
 
 # ===== 4. 检查 .gitignore =====
 echo "📋 检查 .gitignore 配置..."
