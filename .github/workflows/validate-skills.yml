@@ -1,0 +1,96 @@
+name: 🔍 Validate Skills Index
+
+on:
+  push:
+    paths:
+      - 'skills-index.json'
+      - 'recommendations/**'
+  pull_request:
+    paths:
+      - 'skills-index.json'
+      - 'recommendations/**'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: 📥 Checkout code
+        uses: actions/checkout@v4
+      
+      - name: 🔧 Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      
+      - name: ✅ Validate JSON syntax
+        run: |
+          python3 -m json.tool skills-index.json > /dev/null && echo "✅ JSON syntax is valid"
+      
+      - name: 📊 Validate skills structure
+        run: |
+          python3 << 'EOF'
+          import json
+          import sys
+          
+          with open('skills-index.json', 'r', encoding='utf-8') as f:
+              data = json.load(f)
+          
+          # Check required fields
+          required_root_fields = ['version', 'last_updated', 'maintainer', 'source', 'skills']
+          for field in required_root_fields:
+              if field not in data:
+                  print(f"❌ Missing required field: {field}")
+                  sys.exit(1)
+          
+          # Check skills array
+          if not isinstance(data['skills'], list):
+              print("❌ 'skills' must be an array")
+              sys.exit(1)
+          
+          # Check each skill
+          required_skill_fields = ['slug', 'name', 'version', 'category', 'description', 'install_cmd', 'rating']
+          errors = []
+          
+          for i, skill in enumerate(data['skills']):
+              for field in required_skill_fields:
+                  if field not in skill:
+                      errors.append(f"Skill {i} ({skill.get('slug', 'unknown')}): Missing field '{field}'")
+              
+              # Validate rating
+              if 'rating' in skill and not (1 <= skill['rating'] <= 5):
+                  errors.append(f"Skill {i} ({skill.get('slug', 'unknown')}): Rating must be 1-5")
+          
+          if errors:
+              for error in errors:
+                  print(f"❌ {error}")
+              sys.exit(1)
+          
+          print(f"✅ All {len(data['skills'])} skills are valid")
+          print(f"📊 Version: {data['version']}")
+          print(f"📅 Last updated: {data['last_updated']}")
+          EOF
+      
+      - name: 🏆 Check top picks consistency
+        run: |
+          python3 << 'EOF'
+          import json
+          
+          with open('skills-index.json', 'r', encoding='utf-8') as f:
+              data = json.load(f)
+          
+          if 'top_picks' in data:
+              print("✅ Top picks section found")
+              for month, picks in data['top_picks'].items():
+                  print(f"   📅 {month}: {len(picks)} picks")
+                  for pick in picks:
+                      if 'rank' not in pick or 'slug' not in pick:
+                          print(f"   ❌ Invalid pick: {pick}")
+                          exit(1)
+          else:
+              print("ℹ️  No top_picks section (optional)")
+          
+          # Check top_pick flags in skills
+          top_pick_skills = [s for s in data['skills'] if s.get('top_pick', False)]
+          print(f"📌 Skills marked as top_pick: {len(top_pick_skills)}")
+          EOF

@@ -4,20 +4,43 @@
 
 [![Updated](https://img.shields.io/badge/updated-2026--03--13-blue)](https://github.com/xxuan66/openclaw-recommended-skills)
 [![Skills](https://img.shields.io/badge/skills-14-green)](https://github.com/xxuan66/openclaw-recommended-skills)
+[![Top Picks](https://img.shields.io/badge/top%20picks-5-orange)](https://github.com/xxuan66/openclaw-recommended-skills/blob/main/top-picks/2026-03.md)
+[![Clones](https://img.shields.io/github/commit-activity/m/xxuan66/openclaw-recommended-skills)](https://github.com/xxuan66/openclaw-recommended-skills)
 [![License](https://img.shields.io/badge/license-MIT-blue)](https://github.com/xxuan66/openclaw-recommended-skills/blob/main/LICENSE)
+
+**项目数据：** [142 次浏览](https://github.com/xxuan66/openclaw-recommended-skills) · [78 位访客](https://github.com/xxuan66/openclaw-recommended-skills) · [246 次克隆](https://github.com/xxuan66/openclaw-recommended-skills)
 
 ---
 
 ## 📋 目录
 
-- [🌟 本月推荐](#-本月推荐)
+- [🏆 本月 Top 5](#-本月-top-5)
+- [🌟 全部推荐](#-全部推荐)
 - [📂 分类索引](#-分类索引)
 - [📦 快速安装](#-快速安装)
+- [📚 使用案例](#-使用案例)
 - [🔄 更新日志](#-更新日志)
 
 ---
 
-## 🌟 本月推荐
+## 🏆 本月 Top 5
+
+> 🆕 全新栏目！每月精选 5 个必装 Skill，新手闭眼装不踩坑
+
+| 排名 | Skill | 一句话理由 | 安装 |
+|------|-------|-----------|------|
+| 🥇 | **self-improving-agent** | 让 Agent 越用越聪明，唯一带"复利效应"的 Skill | `clawhub install self-improving-agent` |
+| 🥈 | **searxng** | 隐私搜索刚需，无需 API Key，日常使用频率最高 | `clawhub install searxng` |
+| 🥉 | **github** | GitHub 重度用户必备，CLI 集成效率翻倍 | `clawhub install github` |
+| 🏅 | **skill-vetter** | 安装 Skill 前的安全检查员，避免踩坑 | `clawhub install skill-vetter` |
+| 🏅 | **tavily-search** | AI 优化的搜索，结果更精准，适合研究场景 | `clawhub install tavily-search` |
+
+**📖 详细评测：** [查看 3 月 Top 5 完整介绍](./top-picks/2026-03.md)  
+**📊 使用报告：** [self-improving-agent 30 天实测](./examples/self-improving-agent-30days.md)
+
+---
+
+## 🌟 全部推荐
 
 | # | Skill | 版本 | 类别 | 简介 |
 |---|-------|------|------|------|
@@ -156,6 +179,25 @@ clawhub inspect <skill-name>
 | **安全性** | ⭐⭐⭐⭐⭐ | 权限合理，无风险 |
 | **文档质量** | ⭐⭐⭐⭐ | 文档完善，示例清晰 |
 | **维护活跃度** | ⭐⭐⭐⭐ | 持续更新，响应 issue |
+
+---
+
+## 📚 使用案例
+
+> 真实记录 Skill 的使用效果和成长历程
+
+### 📈 self-improving-agent 30 天使用报告
+
+**核心数据：**
+- 运行 30 天，积累 152 条经验教训
+- 重复错误减少 83%
+- 任务效率提升 42%
+- 累计节省 36 小时
+
+**用户评价：**
+> "唯一值得'投资'的 Skill，Agent 像换了一个'人'"
+
+**📖 完整报告：** [查看 30 天详细记录](./examples/self-improving-agent-30days.md)
 
 ---
 

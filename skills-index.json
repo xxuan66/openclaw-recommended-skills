@@ -1,8 +1,37 @@
 {
-  "version": "1.1.1",
+  "version": "1.2.0",
   "last_updated": "2026-03-13",
   "maintainer": "xxuan66",
   "source": "ClawHub (https://clawhub.ai)",
+  "top_picks": {
+    "2026-03": [
+      {
+        "rank": 1,
+        "slug": "self-improving-agent",
+        "reason": "让 Agent 越用越聪明，唯一值得'投资'的 Skill"
+      },
+      {
+        "rank": 2,
+        "slug": "searxng",
+        "reason": "隐私搜索刚需，无需 API Key，日常使用频率最高"
+      },
+      {
+        "rank": 3,
+        "slug": "github",
+        "reason": "GitHub 重度用户必备，CLI 集成效率翻倍"
+      },
+      {
+        "rank": 4,
+        "slug": "skill-vetter",
+        "reason": "安装 Skill 前的安全检查员，避免踩坑"
+      },
+      {
+        "rank": 5,
+        "slug": "tavily-search",
+        "reason": "AI 优化的搜索，结果更精准，适合研究场景"
+      }
+    ]
+  },
   "skills": [
     {
       "slug": "searxng",
@@ -13,7 +42,9 @@
       "tags": ["搜索", "隐私", "本地"],
       "install_cmd": "clawhub install searxng",
       "rating": 5,
-      "recommended": true
+      "recommended": true,
+      "top_pick": true,
+      "top_pick_rank": 2
     },
     {
       "slug": "self-improving-agent",
@@ -24,7 +55,9 @@
       "tags": ["学习", "记忆", "自适应"],
       "install_cmd": "clawhub install self-improving-agent",
       "rating": 5,
-      "recommended": true
+      "recommended": true,
+      "top_pick": true,
+      "top_pick_rank": 1
     },
     {
       "slug": "tavily-search",
@@ -35,7 +68,9 @@
       "tags": ["搜索", "AI", "实时"],
       "install_cmd": "clawhub install tavily-search",
       "rating": 5,
-      "recommended": true
+      "recommended": true,
+      "top_pick": true,
+      "top_pick_rank": 5
     },
     {
       "slug": "github",
@@ -46,7 +81,9 @@
       "tags": ["开发", "GitHub", "CI/CD"],
       "install_cmd": "clawhub install github",
       "rating": 5,
-      "recommended": true
+      "recommended": true,
+      "top_pick": true,
+      "top_pick_rank": 3
     },
     {
       "slug": "summarize",
@@ -68,7 +105,9 @@
       "tags": ["安全", "审查", "权限"],
       "install_cmd": "clawhub install skill-vetter",
       "rating": 5,
-      "recommended": true
+      "recommended": true,
+      "top_pick": true,
+      "top_pick_rank": 4
     },
     {
       "slug": "gog",
