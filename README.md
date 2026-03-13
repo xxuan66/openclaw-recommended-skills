@@ -8,10 +8,7 @@
 [![Daily](https://img.shields.io/badge/daily-updated-yellow)](https://github.com/xxuan66/openclaw-recommended-skills/tree/main/daily)
 [![Weekly](https://img.shields.io/badge/weekly-top10-blue)](https://github.com/xxuan66/openclaw-recommended-skills/tree/main/weekly)
 [![Monthly](https://img.shields.io/badge/monthly-top10-purple)](https://github.com/xxuan66/openclaw-recommended-skills/tree/main/monthly)
-[![Clones](https://img.shields.io/github/commit-activity/m/xxuan66/openclaw-recommended-skills)](https://github.com/xxuan66/openclaw-recommended-skills)
 [![License](https://img.shields.io/badge/license-MIT-blue)](https://github.com/xxuan66/openclaw-recommended-skills/blob/main/LICENSE)
-
-**项目数据：** [142 次浏览](https://github.com/xxuan66/openclaw-recommended-skills) · [78 位访客](https://github.com/xxuan66/openclaw-recommended-skills) · [246 次克隆](https://github.com/xxuan66/openclaw-recommended-skills)
 
 ---
 
