@@ -5,6 +5,9 @@
 [![Updated](https://img.shields.io/badge/updated-2026--03--13-blue)](https://github.com/xxuan66/openclaw-recommended-skills)
 [![Skills](https://img.shields.io/badge/skills-14-green)](https://github.com/xxuan66/openclaw-recommended-skills)
 [![Top Picks](https://img.shields.io/badge/top%20picks-5-orange)](https://github.com/xxuan66/openclaw-recommended-skills/blob/main/top-picks/2026-03.md)
+[![Daily](https://img.shields.io/badge/daily-updated-yellow)](https://github.com/xxuan66/openclaw-recommended-skills/tree/main/daily)
+[![Weekly](https://img.shields.io/badge/weekly-top10-blue)](https://github.com/xxuan66/openclaw-recommended-skills/tree/main/weekly)
+[![Monthly](https://img.shields.io/badge/monthly-top10-purple)](https://github.com/xxuan66/openclaw-recommended-skills/tree/main/monthly)
 [![Clones](https://img.shields.io/github/commit-activity/m/xxuan66/openclaw-recommended-skills)](https://github.com/xxuan66/openclaw-recommended-skills)
 [![License](https://img.shields.io/badge/license-MIT-blue)](https://github.com/xxuan66/openclaw-recommended-skills/blob/main/LICENSE)
 
@@ -37,6 +40,19 @@
 
 **📖 详细评测：** [查看 3 月 Top 5 完整介绍](./top-picks/2026-03.md)  
 **📊 使用报告：** [self-improving-agent 30 天实测](./examples/self-improving-agent-30days.md)
+
+---
+
+## 📅 精选栏目
+
+> 🆕 全新内容矩阵！日/周/月 + 分类，满足不同需求
+
+| 栏目 | 更新频率 | 内容 | 最新 |
+|------|---------|------|------|
+| 📅 **[每日精选](./daily/)** | 每日 08:00 | 每天发现一个最佳 Skill | [2026-03-13: searxng](./daily/2026-03-13.md) |
+| 📆 **[每周热门](./weekly/)** | 周一 08:00 | 本周最火的 Top 10 | [2026-W12](./weekly/2026-W12.md) |
+| 📊 **[每月精选](./monthly/)** | 每月 1 日 08:00 | 深度评测 Top 10 | [2026-03](./monthly/2026-03.md) |
+| 🎯 **[分类必备](./essentials/)** | 按需更新 | 按场景找 Skill | [搜索类](./essentials/search.md) |
 
 ---
 
