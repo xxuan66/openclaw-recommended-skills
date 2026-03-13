@@ -64,11 +64,20 @@ for file in "${WORK_FILES[@]}"; do
     fi
 done
 
-# scripts/ 目录检查（但排除 security-check.sh）
-SCRIPT_COUNT=$(git ls-files scripts/ | grep -v "security-check.sh" | wc -l)
-if [ "$SCRIPT_COUNT" -gt 0 ]; then
-    echo -e "${YELLOW}⚠️  scripts/ 目录有 $SCRIPT_COUNT 个文件（security-check.sh 除外）${NC}"
-    ((WARNINGS++))
+# scripts/ 目录检查（只允许运营脚本，不允许个人脚本）
+ALLOWED_SCRIPTS=("security-check.sh" "daily-update.sh" "weekly-update.sh" "monthly-update.sh")
+SCRIPT_FILES=$(git ls-files scripts/)
+SCRIPT_COUNT=0
+for file in $SCRIPT_FILES; do
+    fname=$(basename "$file")
+    if [[ ! " ${ALLOWED_SCRIPTS[@]} " =~ " ${fname} " ]]; then
+        echo -e "${YELLOW}⚠️  scripts/ 目录有未授权文件：$file${NC}"
+        ((WARNINGS++))
+        ((SCRIPT_COUNT++))
+    fi
+done
+if [ "$SCRIPT_COUNT" -eq 0 ]; then
+    echo -e "${GREEN}✅ scripts/ 目录检查通过${NC}"
 fi
 
 # ===== 4. 检查 .gitignore =====
