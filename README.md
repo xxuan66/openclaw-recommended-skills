@@ -68,9 +68,8 @@
 | 9 | **baidu-search** | 1.1.1 | 🔍 搜索 | 百度 AI 搜索引擎集成 |
 | 10 | **starmemo** | 2.0.0 | 🧠 记忆 | 结构化记忆 + 知识库 + AI 优化 |
 | 11 | **github-trending** | 1.0.0 | 🔎 发现 | GitHub Trending 热门项目追踪 |
-| 12 | **xiaomi-recruitment** | 1.0.0 | 💼 招聘 | 小米 2026 春招岗位监控 |
-| 13 | **xiaohongshu-mcp** | 1.0.0 | 📱 社交 | 小红书内容发布与分析 |
-| 14 | **douyin-hot-trend** | 1.0.0 | 📱 社交 | 抖音热榜/热搜数据获取 |
+| 12 | **xiaohongshu-mcp** | 1.0.0 | 📱 社交 | 小红书内容发布与分析 |
+| 13 | **douyin-hot-trend** | 1.0.0 | 📱 社交 | 抖音热榜/热搜数据获取 |
 
 ---
 
@@ -146,12 +145,6 @@ openclaw agent -m "北京今天天气怎么样？"
 | xiaohongshu-mcp | 1.0.0 | 小红书内容发布与分析 | `clawhub install xiaohongshu-mcp` |
 | douyin-hot-trend | 1.0.0 | 抖音热榜/热搜数据获取 | `clawhub install douyin-hot-trend` |
 
-### 💼 招聘类
-
-| Skill | 版本 | 描述 | 安装命令 |
-|-------|------|------|---------|
-| xiaomi-recruitment | 1.0.0 | 小米 2026 春招岗位监控 | `# 本地技能，已预装` |
-
 ---
 
 ## 📦 快速安装
@@ -163,9 +156,6 @@ openclaw agent -m "北京今天天气怎么样？"
 for skill in searxng self-improving-agent tavily-search github summarize skill-vetter gog find-skills baidu-search starmemo github-trending xiaohongshu-mcp douyin-hot-trend; do
   clawhub install $skill
 done
-
-# 本地技能（已预装，无需安装）
-# - xiaomi-recruitment: 小米招聘监控（工作区自带）
 
 # 或者使用 ClawHub 登录后的 token
 clawhub login --token <your-token>
@@ -228,11 +218,10 @@ clawhub inspect <skill-name>
 
 ### 2026-03-12 - 版本 1.1.0
 
-- ✅ 索引从 10 扩展至 14 个 Skill
+- ✅ 索引从 10 扩展至 13 个 Skill
 - ✅ 新增发现/趋势类：github-trending
 - ✅ 新增社交/内容类：xiaohongshu-mcp、douyin-hot-trend
-- ✅ 新增招聘类：xiaomi-recruitment
-- ✅ 分类索引新增 3 个分类
+- ✅ 分类索引新增 2 个分类
 - ✅ README 技能表格更新
 
 ### 2026-03-10 - 初始版本
