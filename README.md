@@ -150,7 +150,7 @@ openclaw agent -m "北京今天天气怎么样？"
 
 | Skill | 版本 | 描述 | 安装命令 |
 |-------|------|------|---------|
-| xiaomi-recruitment | 1.0.0 | 小米 2026 春招岗位监控 | `clawhub install xiaomi-recruitment` |
+| xiaomi-recruitment | 1.0.0 | 小米 2026 春招岗位监控 | `# 本地技能，已预装` |
 
 ---
 

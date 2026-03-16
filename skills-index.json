@@ -39,7 +39,11 @@
       "version": "1.0.3",
       "category": "search",
       "description": "隐私保护的本地元搜索引擎",
-      "tags": ["搜索", "隐私", "本地"],
+      "tags": [
+        "搜索",
+        "隐私",
+        "本地"
+      ],
       "install_cmd": "clawhub install searxng",
       "rating": 5,
       "recommended": true,
@@ -52,7 +56,11 @@
       "version": "3.0.0",
       "category": "memory",
       "description": "自我反思 + 持续学习 + 记忆管理",
-      "tags": ["学习", "记忆", "自适应"],
+      "tags": [
+        "学习",
+        "记忆",
+        "自适应"
+      ],
       "install_cmd": "clawhub install self-improving-agent",
       "rating": 5,
       "recommended": true,
@@ -65,7 +73,11 @@
       "version": "1.0.0",
       "category": "search",
       "description": "AI 优化的实时网络搜索",
-      "tags": ["搜索", "AI", "实时"],
+      "tags": [
+        "搜索",
+        "AI",
+        "实时"
+      ],
       "install_cmd": "clawhub install tavily-search",
       "rating": 5,
       "recommended": true,
@@ -78,7 +90,11 @@
       "version": "1.0.0",
       "category": "dev",
       "description": "GitHub CLI 集成，管理 PR/Issue/CI",
-      "tags": ["开发", "GitHub", "CI/CD"],
+      "tags": [
+        "开发",
+        "GitHub",
+        "CI/CD"
+      ],
       "install_cmd": "clawhub install github",
       "rating": 5,
       "recommended": true,
@@ -91,7 +107,11 @@
       "version": "1.0.0",
       "category": "content",
       "description": "多格式文档摘要 (PDF/图片/音频/URL)",
-      "tags": ["文档", "摘要", "内容"],
+      "tags": [
+        "文档",
+        "摘要",
+        "内容"
+      ],
       "install_cmd": "clawhub install summarize",
       "rating": 4,
       "recommended": true
@@ -102,7 +122,11 @@
       "version": "1.0.0",
       "category": "security",
       "description": "Skill 安全审查，检查权限和风险",
-      "tags": ["安全", "审查", "权限"],
+      "tags": [
+        "安全",
+        "审查",
+        "权限"
+      ],
       "install_cmd": "clawhub install skill-vetter",
       "rating": 5,
       "recommended": true,
@@ -115,7 +139,11 @@
       "version": "1.0.0",
       "category": "productivity",
       "description": "Google Workspace 全套集成",
-      "tags": ["办公", "Gmail", "Calendar"],
+      "tags": [
+        "办公",
+        "Gmail",
+        "Calendar"
+      ],
       "install_cmd": "clawhub install gog",
       "rating": 4,
       "recommended": true
@@ -126,7 +154,11 @@
       "version": "0.1.0",
       "category": "discovery",
       "description": "帮你发现和安装新 Skill",
-      "tags": ["发现", "搜索", "安装"],
+      "tags": [
+        "发现",
+        "搜索",
+        "安装"
+      ],
       "install_cmd": "clawhub install find-skills",
       "rating": 4,
       "recommended": true
@@ -137,7 +169,11 @@
       "version": "1.1.1",
       "category": "search",
       "description": "百度 AI 搜索引擎集成",
-      "tags": ["搜索", "百度", "中文"],
+      "tags": [
+        "搜索",
+        "百度",
+        "中文"
+      ],
       "install_cmd": "clawhub install baidu-search",
       "rating": 4,
       "recommended": true
@@ -148,7 +184,11 @@
       "version": "2.0.0",
       "category": "memory",
       "description": "结构化记忆 + 知识库 + AI 优化",
-      "tags": ["记忆", "知识库", "AI"],
+      "tags": [
+        "记忆",
+        "知识库",
+        "AI"
+      ],
       "install_cmd": "clawhub install starmemo",
       "rating": 4,
       "recommended": true
@@ -159,7 +199,12 @@
       "version": "1.0.0",
       "category": "discovery",
       "description": "获取 GitHub Trending 热门项目信息，支持时间范围筛选",
-      "tags": ["GitHub", "趋势", "开源", "发现"],
+      "tags": [
+        "GitHub",
+        "趋势",
+        "开源",
+        "发现"
+      ],
       "install_cmd": "clawhub install github-trending",
       "rating": 4,
       "recommended": true
@@ -170,10 +215,15 @@
       "version": "1.0.0",
       "category": "career",
       "description": "小米 2026 春招岗位信息采集与更新",
-      "tags": ["招聘", "小米", "求职"],
-      "install_cmd": "clawhub install xiaomi-recruitment",
+      "tags": [
+        "招聘",
+        "小米",
+        "求职"
+      ],
+      "install_cmd": "# 本地技能，已预装在工作区",
       "rating": 4,
-      "recommended": false
+      "recommended": false,
+      "source": "local"
     },
     {
       "slug": "xiaohongshu-mcp",
@@ -181,7 +231,12 @@
       "version": "1.0.0",
       "category": "social",
       "description": "小红书内容发布、搜索、分析自动化",
-      "tags": ["小红书", "社交", "内容", "自动化"],
+      "tags": [
+        "小红书",
+        "社交",
+        "内容",
+        "自动化"
+      ],
       "install_cmd": "clawhub install xiaohongshu-mcp",
       "rating": 4,
       "recommended": false
@@ -192,7 +247,11 @@
       "version": "1.0.0",
       "category": "social",
       "description": "获取抖音热榜/热搜榜数据，热门视频与挑战赛",
-      "tags": ["抖音", "热榜", "趋势"],
+      "tags": [
+        "抖音",
+        "热榜",
+        "趋势"
+      ],
       "install_cmd": "clawhub install douyin-hot-trend",
       "rating": 4,
       "recommended": false
