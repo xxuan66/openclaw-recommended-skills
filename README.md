@@ -159,10 +159,13 @@ openclaw agent -m "北京今天天气怎么样？"
 ### 批量安装推荐 Skill
 
 ```bash
-# 安装全部推荐 Skill
-for skill in searxng self-improving-agent tavily-search github summarize skill-vetter gog find-skills baidu-search starmemo github-trending xiaomi-recruitment xiaohongshu-mcp douyin-hot-trend; do
+# 安装全部推荐 Skill（clawhub）
+for skill in searxng self-improving-agent tavily-search github summarize skill-vetter gog find-skills baidu-search starmemo github-trending xiaohongshu-mcp douyin-hot-trend; do
   clawhub install $skill
 done
+
+# 本地技能（已预装，无需安装）
+# - xiaomi-recruitment: 小米招聘监控（工作区自带）
 
 # 或者使用 ClawHub 登录后的 token
 clawhub login --token <your-token>
