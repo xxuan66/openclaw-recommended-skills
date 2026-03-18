@@ -2,7 +2,7 @@
 
 > 精选优质 OpenClaw Skill，持续更新中...
 
-[![Updated](https://img.shields.io/badge/updated-2026--03--13-blue)](https://github.com/xxuan66/openclaw-recommended-skills)
+[![Updated](https://img.shields.io/badge/updated-2026--03--18-blue)](https://github.com/xxuan66/openclaw-recommended-skills)
 [![Skills](https://img.shields.io/badge/skills-14-green)](https://github.com/xxuan66/openclaw-recommended-skills)
 [![Top Picks](https://img.shields.io/badge/top%20picks-5-orange)](https://github.com/xxuan66/openclaw-recommended-skills/blob/main/top-picks/2026-03.md)
 [![Daily](https://img.shields.io/badge/daily-updated-yellow)](https://github.com/xxuan66/openclaw-recommended-skills/tree/main/daily)
@@ -46,7 +46,7 @@
 
 | 栏目 | 更新频率 | 内容 | 最新 |
 |------|---------|------|------|
-| 📅 **[每日精选](./daily/)** | 每日 08:00 | 每天发现一个最佳 Skill | [2026-03-16: github](./daily/2026-03-16.md) |
+| 📅 **[每日精选](./daily/)** | 每日 08:00 | 每天发现一个最佳 Skill | [2026-03-18: github](./daily/2026-03-16.md) |
 | 📆 **[每周热门](./weekly/)** | 周一 08:00 | 本周最火的 Top 10 | [2026-W12](./weekly/2026-W12.md) |
 | 📊 **[每月精选](./monthly/)** | 每月 1 日 08:00 | 深度评测 Top 10 | [2026-03](./monthly/2026-03.md) |
 | 🎯 **[分类必备](./essentials/)** | 按需更新 | 按场景找 Skill | [搜索类](./essentials/search.md) |
@@ -77,7 +77,7 @@
 
 > 每日精选一个实用小技巧，帮助你更好地使用 OpenClaw。
 
-### 今日技巧：天气查询
+### 今日技巧：GitHub 仓库管理
 
 使用 `weather` Skill 可以快速查询天气信息，无需 API Key：
 
@@ -211,6 +211,12 @@ clawhub inspect <skill-name>
 
 ### 2026-03-13 - 版本 1.1.1
 
+### 2026-03-18 - Day 006
+
+- ✅ 每日精选：github Skill
+- ✅ 今日技巧更新：GitHub 仓库管理
+- ✅ README 精选栏目同步
+
 - ✅ README 日期更新至 2026-03-13
 - ✅ 新增「快速技巧」栏目
 - ✅ skills-index.json 版本升级至 v1.1.1
@@ -266,4 +272,4 @@ clawhub inspect <skill-name>
 ---
 
 **维护者:** @xxuan66  
-**最后更新:** 2026-03-13
+**最后更新: 2026-03-18
