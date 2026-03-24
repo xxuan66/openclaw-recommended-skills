@@ -73,7 +73,7 @@ output/
 paper_reading_notes/
 
 # ===== 脚本（个人自动化，不应该公开）=====
-scripts/
+# scripts/ 已移除，公开脚本放在根目录
 
 # ===== 其他 =====
 .clawhub/
