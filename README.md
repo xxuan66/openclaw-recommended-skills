@@ -2,7 +2,7 @@
 
 > 精选优质 OpenClaw Skill，持续更新中...
 
-[![Updated](https://img.shields.io/badge/updated-2026--03--24-blue)](https://github.com/xxuan66/openclaw-recommended-skills)
+[![Updated](https://img.shields.io/badge/updated-2026--03--25-blue)](https://github.com/xxuan66/openclaw-recommended-skills)
 [![Skills](https://img.shields.io/badge/skills-13-green)](https://github.com/xxuan66/openclaw-recommended-skills)
 [![Top Picks](https://img.shields.io/badge/top%20picks-5-orange)](https://github.com/xxuan66/openclaw-recommended-skills/blob/main/top-picks/2026-03.md)
 [![Daily](https://img.shields.io/badge/daily-updated-yellow)](https://github.com/xxuan66/openclaw-recommended-skills/tree/main/daily)
@@ -77,24 +77,19 @@
 
 > 每日精选一个实用小技巧，帮助你更好地使用 OpenClaw。
 
-### 今日技巧：searxng 隐私搜索
+### 今日技巧：安装 Skill 前先审查
 
-使用 `searxng` Skill 可以进行隐私保护的元搜索，无需 API Key：
+用 `skill-vetter` 扫描一遍再安装，避免泄露 API Key 或引入可疑代码：
 
 ```bash
-# 基础搜索
-openclaw agent -m "搜索 Python 最新教程"
+# 安装 vetter
+clawhub install skill-vetter
 
-# 指定搜索源
-openclaw agent -m "在 GitHub 搜索 openclaw"
-
-# 避免上下文干扰（使用独立 session）
-openclaw agent -m "搜索 AI Agent 框架" --session-id search-$(date +%s)
+# 安装任何新 Skill 前先跑一遍
+clawhub vet <skill-name>
 ```
 
-**安装：** `clawhub install searxng`
-
-**💡 技巧说明：** 使用 `--session-id` 可以避免搜索时的上下文干扰，每次搜索都是独立的。
+**💡 技巧说明：** vetter 会检查权限范围、硬编码密钥和可疑外连请求，是新手最该装的「安全网」。
 
 更多技巧请查看 [DAILY_UPDATES.md](./DAILY_UPDATES.md)
 
