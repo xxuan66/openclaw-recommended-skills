@@ -3,12 +3,13 @@
 > 精选优质 OpenClaw Skill，持续更新中...
 
 [![Updated](https://img.shields.io/badge/updated-2026--03--24-blue)](https://github.com/xxuan66/openclaw-recommended-skills)
-[![Skills](https://img.shields.io/badge/skills-14-green)](https://github.com/xxuan66/openclaw-recommended-skills)
+[![Skills](https://img.shields.io/badge/skills-13-green)](https://github.com/xxuan66/openclaw-recommended-skills)
 [![Top Picks](https://img.shields.io/badge/top%20picks-5-orange)](https://github.com/xxuan66/openclaw-recommended-skills/blob/main/top-picks/2026-03.md)
 [![Daily](https://img.shields.io/badge/daily-updated-yellow)](https://github.com/xxuan66/openclaw-recommended-skills/tree/main/daily)
 [![Weekly](https://img.shields.io/badge/weekly-top10-blue)](https://github.com/xxuan66/openclaw-recommended-skills/tree/main/weekly)
 [![Monthly](https://img.shields.io/badge/monthly-top10-purple)](https://github.com/xxuan66/openclaw-recommended-skills/tree/main/monthly)
-[![License](https://img.shields.io/badge/license-MIT-blue)](https://github.com/xxuan66/openclaw-recommended-skills/blob/main/LICENSE)
+[![Roadmap](https://img.shields.io/badge/roadmap-2026-pink)](./ROADMAP.md)
+[![License](https://img.shields.io/badge/license-MIT-blue)](./LICENSE)
 
 ---
 
@@ -19,6 +20,7 @@
 - [📂 分类索引](#-分类索引)
 - [📦 快速安装](#-快速安装)
 - [📚 使用案例](#-使用案例)
+- [🎯 迭代目标](#-迭代目标)
 - [🔄 更新日志](#-更新日志)
 
 ---
@@ -212,12 +214,37 @@ clawhub inspect <skill-name>
 
 ---
 
+## 🎯 迭代目标
+
+**使命：** 帮助用户发现和安装最好的 OpenClaw Skill
+
+**愿景：** 成为 OpenClaw 用户首选的技能推荐资源库
+
+| 指标 | 当前 | 3 个月目标 | 6 个月目标 |
+|------|------|-----------|-----------|
+| ⭐ Stars | 2 | 50+ | 100+ |
+| 📦 收录 Skill | 13 个 | 30+ | 50+ |
+| 📅 日更新连续 | Day 012 | 90 天 | 180 天 |
+| 👀 月访问量 | 580 | 1000+ | 2000+ |
+
+**📖 详细规划：** [查看完整路线图](./ROADMAP.md)
+
+**发展阶段：**
+- ✅ **阶段一：基础建设**（第 1 个月）- 建立稳定的内容生产流程
+- 🎯 **阶段二：内容优化**（第 2 个月）- 提升内容质量和差异化
+- 📅 **阶段三：社区运营**（第 3 个月）- 建立社区贡献机制
+- 🔮 **阶段四：生态整合**（第 4-6 个月）- 成为 OpenClaw 生态核心
+
+---
+
 ## 🔄 近期更新
 
-### 2026-03-24
+### 2026-03-24 - 重要更新
 
 - ✅ 优化每日精选栏目链接方式（主 README 无需每日修改）
 - ✅ 新增自动化脚本 `update-daily-readme.sh`
+- ✅ 新增 [ROADMAP.md](./ROADMAP.md) 迭代目标和路线图
+- ✅ 新增"迭代目标"栏目到 README
 - ✅ 更新 badge 日期至 2026-03-24
 
 ### 2026-03-18
