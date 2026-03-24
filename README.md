@@ -212,35 +212,30 @@ clawhub inspect <skill-name>
 
 ---
 
-## 🔄 更新日志
+## 🔄 近期更新
 
-### 2026-03-13 - 版本 1.1.1
+### 2026-03-24
 
-### 2026-03-18 - Day 006
+- ✅ 优化每日精选栏目链接方式（主 README 无需每日修改）
+- ✅ 新增自动化脚本 `update-daily-readme.sh`
+- ✅ 更新 badge 日期至 2026-03-24
 
-- ✅ 每日精选：github Skill
-- ✅ 今日技巧更新：GitHub 仓库管理
-- ✅ README 精选栏目同步
+### 2026-03-18
 
-- ✅ README 日期更新至 2026-03-13
 - ✅ 新增「快速技巧」栏目
+- ✅ README 日期更新至 2026-03-18
 - ✅ skills-index.json 版本升级至 v1.1.1
-- ✅ DAILY_UPDATES.md 添加 Day 004
 
-### 2026-03-12 - 版本 1.1.0
+### 2026-03-12
 
-- ✅ 索引从 10 扩展至 13 个 Skill
-- ✅ 新增发现/趋势类：github-trending
-- ✅ 新增社交/内容类：xiaohongshu-mcp、douyin-hot-trend
+- ✅ 技能索引从 10 扩展至 13 个
+- ✅ 新增 github-trending、xiaohongshu-mcp、douyin-hot-trend
 - ✅ 分类索引新增 2 个分类
-- ✅ README 技能表格更新
 
 ### 2026-03-10 - 初始版本
 
-- ✅ 创建仓库
-- ✅ 精选 10 个热门 Skill
-- ✅ 分类索引
-- ✅ 快速安装指南
+- ✅ 创建仓库，精选 10 个热门 Skill
+- ✅ 分类索引 + 快速安装指南
 
 ---
 
@@ -277,4 +272,14 @@ clawhub inspect <skill-name>
 ---
 
 **维护者:** @xxuan66  
-**最后更新: 2026-03-18
+**最后更新:** 2026-03-24
+
+---
+
+## 📅 更新日志
+
+详细的每日更新记录请查看：
+
+- **[DAILY_UPDATES.md](./DAILY_UPDATES.md)** - 完整更新日志
+- **[daily/README.md](./daily/README.md)** - 每日精选栏目
+- **[Releases](https://github.com/xxuan66/openclaw-recommended-skills/releases)** - 版本发布
