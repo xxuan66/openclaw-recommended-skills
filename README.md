@@ -12,8 +12,23 @@
 
 ---
 
+## 🎯 应用场景
+
+> 🆕 按场景找 Skill，而不是按 Skill 找场景！
+
+| 场景 | 适合人群 | 核心 Skills | 时间节省 |
+|------|----------|-----------|----------|
+| 💰 **[搞钱/变现](https://github.com/xxuan66/openclaw-workflows/blob/main/scenarios/money-making/README.md)** | 自媒体运营、副业 | `wechat-operator`, `xiaohongshu-mcp`, `social-pack` | 每天 2 小时 |
+| ⏰ **[省时间](https://github.com/xxuan66/openclaw-workflows/blob/main/scenarios/time-saving/README.md)** | 效率提升、自动化 | `qqbot-cron`, `automation-workflows`, `feishu-bitable` | 每天 30 分钟 |
+| 📰 **[获取信息](https://github.com/xxuan66/openclaw-workflows/blob/main/scenarios/information/README.md)** | 热点追踪、研究 | `github-trending`, `tavily-search`, `news-aggregator` | 每天 1 小时 |
+
+**📖 完整指南：** [查看场景化方案](https://github.com/xxuan66/openclaw-workflows/blob/main/scenarios/QUICKSTART.md) | **🚀 快速开始：** 3 分钟上手自动化
+
+---
+
 ## 📋 目录
 
+- [🎯 应用场景](#-应用场景)
 - [🏆 本月 Top 5](#-本月-top-5)
 - [🌟 全部推荐](#-全部推荐)
 - [📂 分类索引](#-分类索引)
