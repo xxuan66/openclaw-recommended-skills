@@ -105,7 +105,7 @@ clawhub install summarize
 openclaw agent -m "搜索最新的 LLM 推理优化技术，找到 3 篇文章并总结要点"
 ```
 
-**💡 组合心法：** 不要只装单个 Skill，思考「输入 → 处理 → 输出」的链路。搜索是输入，摘要是处理，消息通知是输出——三个 Skill 串联就是一条自动化流水线。
+**💡 组合心法：** 不要只装单个 Skill，思考「输入 → 处理 → 输出」的链路。搜索是输入，摘要是处理，消息通知是输出——三个 Skill 串联就是一条自动化流水线。更多组合案例参考 [openclaw-workflows](https://github.com/xxuan66/openclaw-workflows#-工作流灵感)。
 
 更多技巧请查看 [DAILY_UPDATES.md](./DAILY_UPDATES.md)
 
