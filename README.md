@@ -2,7 +2,7 @@
 
 > 精选优质 OpenClaw Skill，持续更新中...
 
-[![Updated](https://img.shields.io/badge/updated-2026--03--27-blue)](https://github.com/xxuan66/openclaw-recommended-skills)
+[![Updated](https://img.shields.io/badge/updated-2026--03--29-blue)](https://github.com/xxuan66/openclaw-recommended-skills)
 [![Skills](https://img.shields.io/badge/skills-13-green)](https://github.com/xxuan66/openclaw-recommended-skills)
 [![Top Picks](https://img.shields.io/badge/top%20picks-5-orange)](https://github.com/xxuan66/openclaw-recommended-skills/blob/main/top-picks/2026-03.md)
 [![Daily](https://img.shields.io/badge/daily-updated-yellow)](https://github.com/xxuan66/openclaw-recommended-skills/tree/main/daily)
@@ -92,19 +92,20 @@
 
 > 每日精选一个实用小技巧，帮助你更好地使用 OpenClaw。
 
-### 今日技巧：记忆分层管理
+### 今日技巧：搜索 + 摘要 = 效率翻倍
 
-装好 starmemo 后，试试让 Agent 按"主题 > 子主题"层级整理记忆，检索时能找到更多关联内容：
+试试把 `searxng`（或 `tavily-search`）和 `summarize` 组合使用：先搜到文章链接，再让 summarize 一键提取要点。比自己逐篇阅读快 3 倍以上。
 
 ```bash
-# 安装 starmemo
-clawhub install starmemo
+# 安装两个 Skill
+clawhub install searxng
+clawhub install summarize
 
-# 记录时带上分类标签
-openclaw agent -m "用 starmemo 记录：Docker 镜像分层原理，分类为 容器 > Docker > 原理"
+# 实际用法示例
+openclaw agent -m "搜索最新的 LLM 推理优化技术，找到 3 篇文章并总结要点"
 ```
 
-**💡 技巧说明：** 带层级的记忆比散装笔记更容易检索，starmemo 会自动建立关联。配合 self-improving-agent 使用效果更佳。
+**💡 组合心法：** 不要只装单个 Skill，思考「输入 → 处理 → 输出」的链路。搜索是输入，摘要是处理，消息通知是输出——三个 Skill 串联就是一条自动化流水线。
 
 更多技巧请查看 [DAILY_UPDATES.md](./DAILY_UPDATES.md)
 
@@ -224,6 +225,11 @@ clawhub inspect <skill-name>
 
 ## 🔄 近期更新
 
+### 2026-03-29
+
+- ✅ 更新「快速技巧」：搜索 + 摘要组合用法
+- ✅ 更新 badge 日期至 2026-03-29
+
 ### 2026-03-24
 
 - ✅ 优化每日精选栏目链接方式（主 README 无需每日修改）
@@ -282,7 +288,7 @@ clawhub inspect <skill-name>
 ---
 
 **维护者:** @xxuan66  
-**最后更新:** 2026-03-27
+**最后更新:** 2026-03-29
 
 ---
 
