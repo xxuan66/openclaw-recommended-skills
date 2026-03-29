@@ -123,14 +123,14 @@ YESTERDAY=$(date -d "$TODAY - 1 day" +%Y-%m-%d)
 cp "$DAILY_DIR/README.md" "$DAILY_DIR/README.md.bak"
 
 # 更新今日精选部分
-sed -i "s#\\*\\*今天推荐：\\*\\* \\[.*\\](.*)#\\*\\*今天推荐：\\*\\* [$SKILL_NAME](./$TODAY.md)#" "$DAILY_DIR/README.md"
-sed -i "s#^> .*$#> $SKILL_DESC#" "$DAILY_DIR/README.md"
+sed -i "s|\\*\\*今天推荐：\\*\\* \\[.*\\](.*)|\\*\\*今天推荐：\\*\\* [$SKILL_NAME](./$TODAY.md)|" "$DAILY_DIR/README.md"
+sed -i "s|^> .*$|> $SKILL_DESC|" "$DAILY_DIR/README.md"
 
 # 更新累计更新天数
-sed -i "s#\\*\\*累计更新：\\*\\* Day.*#\\*\\*累计更新：\\*\\* Day $DAY_NUM#" "$DAILY_DIR/README.md"
+sed -i "s|\\*\\*累计更新：\\*\\* Day.*|\\*\\*累计更新：\\*\\* Day $DAY_NUM|" "$DAILY_DIR/README.md"
 
 # 更新最后更新时间
-sed -i "s#\\*\\*最后更新：\\*\\*.*#\\*\\*最后更新：\\*\\* $TODAY 08:00#" "$DAILY_DIR/README.md"
+sed -i "s|\\*\\*最后更新：\\*\\*.*|\\*\\*最后更新：\\*\\* $TODAY 08:00|" "$DAILY_DIR/README.md"
 
 # 更新历史表格（在表格开头添加今日记录）
 DAY_OF_MONTH=$(date +%d)
